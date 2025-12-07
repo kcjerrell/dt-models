@@ -1,0 +1,92 @@
+name: Build & Publish JSON from Upstream
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # hourly
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Load cached SHAs
+        id: cache
+        run: |
+          mkdir -p .cache
+          echo "SHA1=$(cat .cache/repo1_sha 2>/dev/null || echo none)" >> $GITHUB_OUTPUT
+          echo "SHA2=$(cat .cache/repo2_sha 2>/dev/null || echo none)" >> $GITHUB_OUTPUT
+
+      - name: Check upstream SHAs
+        id: check
+        run: |
+          SHA1_NEW=$(git ls-remote https://github.com/drawthingsai/draw-things-community HEAD | awk '{print $1}')
+          SHA2_NEW=$(git ls-remote https://github.com/drawthingsai/community-models HEAD | awk '{print $1}')
+          echo "SHA1_NEW=$SHA1_NEW" >> $GITHUB_OUTPUT
+          echo "SHA2_NEW=$SHA2_NEW" >> $GITHUB_OUTPUT
+
+      - name: Test if changed
+        id: changed
+        run: |
+          if [[ "${{ steps.cache.outputs.SHA1 }}" != "${{ steps.check.outputs.SHA1_NEW }}" ]] || \
+             [[ "${{ steps.cache.outputs.SHA2 }}" != "${{ steps.check.outputs.SHA2_NEW }}" ]]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Stop if no changes detected
+        if: steps.changed.outputs.changed == 'false'
+        run: echo "No upstream change. Exiting."
+
+      - name: Setup Node
+        if: steps.changed.outputs.changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup Python
+        if: steps.changed.outputs.changed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Node deps
+        if: steps.changed.outputs.changed == 'true'
+        run: npm ci
+
+      - name: Install Python deps
+        if: steps.changed.outputs.changed == 'true'
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run build script
+        if: steps.changed.outputs.changed == 'true'
+        run: node scripts/build.js
+
+      - name: Publish JSON to Pages
+        if: steps.changed.outputs.changed == 'true'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: gh-pages
+          commit_message: "Update JSON from upstream"
+
+      - name: Save new SHAs
+        if: steps.changed.outputs.changed == 'true'
+        run: |
+          echo "${{ steps.check.outputs.SHA1_NEW }}" > .cache/repo1_sha
+          echo "${{ steps.check.outputs.SHA2_NEW }}" > .cache/repo2_sha
+
+      - name: Commit cache
+        if: steps.changed.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .cache
+          git commit -m "Update upstream SHAs" || echo "No changes to commit"
+          git push

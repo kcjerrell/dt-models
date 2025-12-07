@@ -1,0 +1,15 @@
+{
+  "name": "dt-models",
+  "version": "1.0.0",
+  "description": "",
+  "main": "models.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./models.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fs-extra": "^11.3.2"
+  }
+}
