@@ -218,27 +218,6 @@
     }
   },
   {
-    "name": "Fooocus Inpaint v2.6",
-    "file": "fooocus_inpaint_v2.6_lora_f16.ckpt",
-    "prefix": "",
-    "version": "sdxl_base_v0.9",
-    "modifier": "inpainting"
-  },
-  {
-    "name": "Fooocus Inpaint v2.6 (8-bit)",
-    "file": "fooocus_inpaint_v2.6_lora_q8p.ckpt",
-    "prefix": "",
-    "version": "sdxl_base_v0.9",
-    "modifier": "inpainting"
-  },
-  {
-    "name": "Foreground to Blending",
-    "file": "layer_xl_fg2ble_v1.0_lora_f16.ckpt",
-    "prefix": "",
-    "version": "sdxl_base_v0.9",
-    "modifier": "inpainting"
-  },
-  {
     "name": "Ghibli Cartoon Art",
     "prefix": "Ghibli Art",
     "is_lo_ha": false,
@@ -477,31 +456,10 @@
     }
   },
   {
-    "name": "LCM SDXL Base (1.0)",
-    "file": "lcm_sd_xl_base_1.0_lora_f16.ckpt",
-    "prefix": "",
-    "version": "sdxl_base_v0.9",
-    "isConsistencyModel": true
-  },
-  {
-    "name": "LCM SDXL Refiner (1.0)",
-    "file": "lcm_sd_xl_refiner_1.0_lora_f16.ckpt",
-    "prefix": "",
-    "version": "sdxl_refiner_v0.9",
-    "isConsistencyModel": true
-  },
-  {
     "version": "ssd_1b",
     "file": "lcm_ssd_1b_lora_f16.ckpt",
     "prefix": "",
     "name": "LCM SSD 1B (Segmind)"
-  },
-  {
-    "name": "LCM Stable Diffusion v1.5",
-    "file": "lcm_sd_v1.5_lora_f16.ckpt",
-    "prefix": "",
-    "version": "v1",
-    "isConsistencyModel": true
   },
   {
     "name": "Long Hair Slider",
@@ -768,12 +726,6 @@
     "file": "sdxl_lightning_8_step_lora_f16.ckpt"
   },
   {
-    "name": "SDXL Offset (1.0)",
-    "file": "sdxl_offset_v1.0_lora_f16.ckpt",
-    "prefix": "",
-    "version": "sdxl_base_v0.9"
-  },
-  {
     "version": "v1",
     "name": "SDXL Render v2.0",
     "prefix": "",
@@ -793,20 +745,6 @@
     "is_lo_ha": false,
     "version": "sdxl_base_v0.9",
     "file": "surprised_look_slider_lora_f16.ckpt"
-  },
-  {
-    "name": "TCD SDXL Base (1.0)",
-    "file": "tcd_sd_xl_base_1.0_lora_f16.ckpt",
-    "prefix": "",
-    "version": "sdxl_base_v0.9",
-    "isConsistencyModel": true
-  },
-  {
-    "name": "TCD Stable Diffusion v1.5",
-    "file": "tcd_sd_v1.5_lora_f16.ckpt",
-    "prefix": "",
-    "version": "v1",
-    "isConsistencyModel": true
   },
   {
     "version": "v1",
@@ -831,22 +769,6 @@
     "file": "to8s_high_key_sd_v2.x_lora_f16.ckpt",
     "prefix": "to8highkey ",
     "name": "TO8's High Key"
-  },
-  {
-    "name": "Transparent Image",
-    "file": "layer_flux_1_transparent_lora_f16.ckpt",
-    "prefix": "",
-    "version": "flux1",
-    "alternativeDecoder": "flux_1_transparent_vae_decoder_f16.ckpt",
-    "alternativeDecoderVersion": "transparent"
-  },
-  {
-    "name": "Transparent Image (Attention Injection)",
-    "file": "layer_xl_transparent_attn_v1.0_lora_f16.ckpt",
-    "prefix": "",
-    "version": "sdxl_base_v0.9",
-    "alternativeDecoder": "transparent_vae_decoder_v1.0_f16.ckpt",
-    "alternativeDecoderVersion": "transparent"
   },
   {
     "name": "Transparent Image FLUX.1 [dev]",
