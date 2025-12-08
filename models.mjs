@@ -36,6 +36,18 @@ async function compileModelData() {
 
     const communityEmbeddings = await getCommunityModels("embeddings")
     await save("./dist/community_embeddings.json", communityEmbeddings)
+
+    const combined = {
+        officialModels,
+        officialCnets,
+        officialLoras,
+        communityModels,
+        communityCnets,
+        communityLoras,
+        communityEmbeddings,
+        uncuratedModels
+    }
+    await save("./dist/combined_models.json", combined)
 }
 
 /**
