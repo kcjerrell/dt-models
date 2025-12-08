@@ -16,11 +16,26 @@ export async function updateModels(skipClone = false) {
 async function compileModelData() {
     console.log("compiling model data")
 
-    await compileModelType("models", 'Model')
-    await compileModelType("uncurated_models")
-    await compileModelType("controlnets", 'ControlNet')
-    await compileModelType("loras", 'LoRA')
-    await compileModelType("embeddings", 'TextualInversion')
+    const communityModels = await getCommunityModels("models")
+    await save("./dist/community_models.json", communityModels)
+    const officialModels = await getOfficialModels("Model")
+    await save("./dist/official_models.json", officialModels)
+
+    const uncuratedModels = await getCommunityModels("uncurated_models")
+    await save("./dist/uncurated_models.json", uncuratedModels)
+
+    const communityCnets = await getCommunityModels("controlnets")
+    await save("./dist/community_controlnets.json", communityCnets)
+    const officialCnets = await getOfficialModels("ControlNet")
+    await save("./dist/official_controlnets.json", officialCnets)
+
+    const communityLoras = await getCommunityModels("loras")
+    await save("./dist/community_loras.json", communityLoras)
+    const officialLoras = await getOfficialModels("LoRA")
+    await save("./dist/official_loras.json", officialLoras)
+
+    const communityEmbeddings = await getCommunityModels("embeddings")
+    await save("./dist/community_embeddings.json", communityEmbeddings)
 }
 
 /**
@@ -31,12 +46,11 @@ async function compileModelData() {
  * parsed from swift and combined with the community models
  *
  * @param {"models" | "uncurated_models" | "controlnets" | "loras" | "embeddings"} type
- * @param {"Model" | "ControlNet" | "LoRA" | "TextualInversion" | undefined} official must match the filename for the official models file
+ * @param {"Model" | "ControlNet" | "LoRA" | undefined} official must match the filename for the official models file
  */
 async function compileModelType(type, official) {
     try {
-        cp.execSync(`python utils/${type}_json.py`, { cwd: "./community-models", stdio: "inherit" })
-        const models = await fse.readJSON(`./community-models/${type}.json`)
+        const models = await getCommunityModels(type)
 
         if (official) {
             const officialModels = await compileOfficialModels(official)
@@ -50,6 +64,49 @@ async function compileModelType(type, official) {
         await fse.writeJSON(`./dist/${type}.json`, models, { spaces: 2 })
     } catch (e) {
         console.error("couldn't compile", type)
+        console.error(e)
+    }
+}
+
+/** @param {"models" | "uncurated_models" | "controlnets" | "loras" | "embeddings"} type */
+async function getCommunityModels(type) {
+    try {
+        cp.execSync(`python utils/${type}_json.py`, { cwd: "./community-models", stdio: "inherit" })
+        const models = await fse.readJSON(`./community-models/${type}.json`)
+
+        models.sort((a, b) => a.name.localeCompare(b.name))
+        models.forEach(m => { m.version = versionMap(m.version) })
+
+        return models
+    }
+    catch (e) {
+        console.error(e)
+        return []
+    }
+}
+
+/** @param {"Model" | "ControlNet" | "LoRA"} official must match the filename for the official models file */
+async function getOfficialModels(official) {
+    try {
+
+        const models = await compileOfficialModels(official)
+
+        models.sort((a, b) => a.name.localeCompare(b.name))
+        models.forEach(m => { m.version = versionMap(m.version) })
+
+        return models
+    }
+    catch (e) {
+        console.error(e)
+        return []
+    }
+}
+
+async function save(filename, data) {
+    try {
+        await fse.writeJSON(filename, data, { spaces: 2 })
+    } catch (e) {
+        console.error("couldn't save", filename)
         console.error(e)
     }
 }
