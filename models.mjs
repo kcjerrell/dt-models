@@ -127,6 +127,7 @@ async function save(filename, data) {
 async function cloneCommunityModels() {
     console.log("removing old generated files")
     fse.emptyDirSync("./dist")
+    fse.emptyDirSync("./community-models")
     console.log("cloning draw things community models")
     cp.execSync("git clone https://github.com/drawthingsai/community-models.git", { stdio: "inherit" })
 }
