@@ -38,6 +38,7 @@ async function compileModelData() {
     await save("./dist/community_embeddings.json", communityEmbeddings)
 
     const combined = {
+        lastUpdate: Date.now(),
         officialModels,
         officialCnets,
         officialLoras,
