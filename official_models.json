@@ -479,6 +479,21 @@
     "copyright": "© 2025 Alibaba"
   },
   {
+    "name": "Qwen Image Edit 2511 (BF16, 6-bit)",
+    "file": "qwen_image_edit_2511_bf16_q6p.ckpt",
+    "prefix": "",
+    "version": "qwen_image",
+    "defaultScale": 16,
+    "textEncoder": "qwen_2.5_vl_7b_q8p.ckpt",
+    "autoencoder": "qwen_image_vae_f16.ckpt",
+    "modifier": "qwenimageEdit2511",
+    "clipEncoder": "qwen_2.5_vl_7b_vit_f16.ckpt",
+    "hiresFixScale": 24,
+    "isBf16": true,
+    "note": "[Qwen Image Edit 2511](https://huggingface.co/Qwen/Qwen-Image-Edit-2511) is a state-of-the-art open-source image generation model known for its exceptional text layout and prompt adherence across a wide range of styles, including photorealistic, cartoon, and artistic. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended.",
+    "copyright": "© 2025 Alibaba"
+  },
+  {
     "name": "Qwen Image Layered 1.0 (BF16, 6-bit)",
     "file": "qwen_image_layered_1.0_bf16_q6p.ckpt",
     "prefix": "",
