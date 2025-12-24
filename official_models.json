@@ -479,6 +479,34 @@
     "copyright": "© 2025 Alibaba"
   },
   {
+    "name": "Qwen Image Edit 2511",
+    "file": "qwen_image_edit_2511_q8p.ckpt",
+    "prefix": "",
+    "version": "qwen_image",
+    "defaultScale": 16,
+    "textEncoder": "qwen_2.5_vl_7b_q8p.ckpt",
+    "autoencoder": "qwen_image_vae_f16.ckpt",
+    "modifier": "qwenimageEdit2511",
+    "clipEncoder": "qwen_2.5_vl_7b_vit_f16.ckpt",
+    "hiresFixScale": 24,
+    "note": "[Qwen Image Edit 2511](https://huggingface.co/Qwen/Qwen-Image-Edit-2511) is an enhanced image editing model that significantly improves character consistency, mitigates image drift, and strengthens multi-person fusion capabilities compared to its predecessor (2509). It integrates popular LoRA features natively, enabling advanced lighting control and viewpoint generation without extra tuning, alongside specialized industrial design and geometric reasoning capabilities. It is Apache 2.0-licensed, with 40 inference steps recommended for optimal results.",
+    "copyright": "© 2025 Alibaba"
+  },
+  {
+    "name": "Qwen Image Edit 2511 (6-bit)",
+    "file": "qwen_image_edit_2511_q6p.ckpt",
+    "prefix": "",
+    "version": "qwen_image",
+    "defaultScale": 16,
+    "textEncoder": "qwen_2.5_vl_7b_q8p.ckpt",
+    "autoencoder": "qwen_image_vae_f16.ckpt",
+    "modifier": "qwenimageEdit2511",
+    "clipEncoder": "qwen_2.5_vl_7b_vit_f16.ckpt",
+    "hiresFixScale": 24,
+    "note": "[Qwen Image Edit 2511](https://huggingface.co/Qwen/Qwen-Image-Edit-2511) is an enhanced image editing model that significantly improves character consistency, mitigates image drift, and strengthens multi-person fusion capabilities compared to its predecessor (2509). It integrates popular LoRA features natively, enabling advanced lighting control and viewpoint generation without extra tuning, alongside specialized industrial design and geometric reasoning capabilities. It is Apache 2.0-licensed, with 40 inference steps recommended for optimal results.",
+    "copyright": "© 2025 Alibaba"
+  },
+  {
     "name": "Qwen Image Edit 2511 (BF16, 6-bit)",
     "file": "qwen_image_edit_2511_bf16_q6p.ckpt",
     "prefix": "",
