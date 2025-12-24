@@ -696,6 +696,18 @@
     }
   },
   {
+    "name": "Qwen Image Edit 2511 Lightning 4-Step v1.0",
+    "prefix": "",
+    "is_lo_ha": false,
+    "version": "qwen_image",
+    "file": "qwen_image_edit_2511_lightning_4_step_v1.0_lora_f16.ckpt",
+    "weight": {
+      "value": 1,
+      "lower_bound": -1.5,
+      "upper_bound": 2.5
+    }
+  },
+  {
     "name": "SD3 Medium 3.5 Turbo 4-Step",
     "prefix": "",
     "is_lo_ha": false,
