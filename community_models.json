@@ -1906,7 +1906,7 @@
     "hires_fix_scale": 24,
     "file": "qwen_image_2512_bf16_q6p.ckpt",
     "upcast_attention": false,
-    "text_encoder": "qwen_2.5_vl_7b_f16.ckpt",
+    "text_encoder": "qwen_2.5_vl_7b_q8p.ckpt",
     "high_precision_autoencoder": false,
     "objective": {
       "u": {
@@ -2202,7 +2202,7 @@
     "hires_fix_scale": 24,
     "file": "qwen_image_2512_bf16_q8p.ckpt",
     "upcast_attention": false,
-    "text_encoder": "qwen_2.5_vl_7b_f16.ckpt",
+    "text_encoder": "qwen_2.5_vl_7b_q8p.ckpt",
     "high_precision_autoencoder": false,
     "objective": {
       "u": {
