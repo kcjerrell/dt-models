@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1766639659218,
+  "lastUpdate": 1767161757463,
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -392,6 +392,32 @@
       "hiresFixScale": 24,
       "isBf16": true,
       "note": "[Qwen Image](https://huggingface.co/Qwen/Qwen-Image) is a state-of-the-art open-source image generation model known for its exceptional text layout and prompt adherence across a wide range of styles, including photorealistic, cartoon, and artistic. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended. The BF16 version is only compatible with macOS 15, iOS 18 and above.",
+      "copyright": "© 2025 Alibaba"
+    },
+    {
+      "name": "Qwen Image 2512 (BF16, 6-bit)",
+      "file": "qwen_image_2512_bf16_q6p.ckpt",
+      "prefix": "",
+      "version": "qwen_image",
+      "defaultScale": 16,
+      "textEncoder": "qwen_2.5_vl_7b_q8p.ckpt",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "isBf16": true,
+      "note": "[Qwen Image 2512](https://huggingface.co/Qwen/Qwen-Image-2512) is the december update of Qwen Image model with improvements on enhanced human realism, finer natural detail and improved text rendering. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended. The BF16 version is only compatible with macOS 15, iOS 18 and above.",
+      "copyright": "© 2025 Alibaba"
+    },
+    {
+      "name": "Qwen Image 2512 (BF16)",
+      "file": "qwen_image_2512_bf16_q8p.ckpt",
+      "prefix": "",
+      "version": "qwen_image",
+      "defaultScale": 16,
+      "textEncoder": "qwen_2.5_vl_7b_q8p.ckpt",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "isBf16": true,
+      "note": "[Qwen Image 2512](https://huggingface.co/Qwen/Qwen-Image-2512) is the december update of Qwen Image model with improvements on enhanced human realism, finer natural detail and improved text rendering. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended. The BF16 version is only compatible with macOS 15, iOS 18 and above.",
       "copyright": "© 2025 Alibaba"
     },
     {
