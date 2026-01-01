@@ -660,6 +660,30 @@
     }
   },
   {
+    "name": "Qwen Image 2512 Lightning 4-Step v1.0",
+    "prefix": "",
+    "is_lo_ha": false,
+    "version": "qwen_image",
+    "file": "qwen_image_2512_lightning_4_step_v1.0_lora_f16.ckpt",
+    "weight": {
+      "value": 1,
+      "lower_bound": -1.5,
+      "upper_bound": 2.5
+    }
+  },
+  {
+    "name": "Qwen Image 2512 Turbo 4-Step v1.0",
+    "prefix": "",
+    "is_lo_ha": false,
+    "version": "qwen_image",
+    "file": "qwen_image_2512_turbo_4_step_v1.0_lora_f16.ckpt",
+    "weight": {
+      "value": 1,
+      "lower_bound": -1.5,
+      "upper_bound": 2.5
+    }
+  },
+  {
     "name": "Qwen Image Edit 1.0 Lightning 4-Step v1.0",
     "prefix": "",
     "is_lo_ha": false,
