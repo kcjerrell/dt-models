@@ -1917,7 +1917,7 @@
     "mmdit": {
       "dual_attention_layers": [],
       "qk_norm": true,
-      "activation_proj_scaling": {
+      "activation_qk_scaling": {
         "0": 2,
         "1": 2,
         "2": 2,
@@ -2065,7 +2065,7 @@
     "mmdit": {
       "dual_attention_layers": [],
       "qk_norm": true,
-      "activation_proj_scaling": {
+      "activation_qk_scaling": {
         "0": 2,
         "1": 2,
         "2": 2,
@@ -2213,7 +2213,7 @@
     "mmdit": {
       "dual_attention_layers": [],
       "qk_norm": true,
-      "activation_proj_scaling": {
+      "activation_qk_scaling": {
         "0": 2,
         "1": 2,
         "2": 2,
