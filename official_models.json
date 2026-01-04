@@ -393,6 +393,30 @@
     "copyright": "© 2025 Alibaba"
   },
   {
+    "name": "Qwen Image 2512",
+    "file": "qwen_image_2512_q8p.ckpt",
+    "prefix": "",
+    "version": "qwen_image",
+    "defaultScale": 16,
+    "textEncoder": "qwen_2.5_vl_7b_q8p.ckpt",
+    "autoencoder": "qwen_image_vae_f16.ckpt",
+    "hiresFixScale": 24,
+    "note": "[Qwen Image 2512](https://huggingface.co/Qwen/Qwen-Image-2512) is the december update of Qwen Image model with improvements on enhanced human realism, finer natural detail and improved text rendering. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended.",
+    "copyright": "© 2025 Alibaba"
+  },
+  {
+    "name": "Qwen Image 2512 (6-bit)",
+    "file": "qwen_image_2512_q6p.ckpt",
+    "prefix": "",
+    "version": "qwen_image",
+    "defaultScale": 16,
+    "textEncoder": "qwen_2.5_vl_7b_q8p.ckpt",
+    "autoencoder": "qwen_image_vae_f16.ckpt",
+    "hiresFixScale": 24,
+    "note": "[Qwen Image 2512](https://huggingface.co/Qwen/Qwen-Image-2512) is the december update of Qwen Image model with improvements on enhanced human realism, finer natural detail and improved text rendering. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended.",
+    "copyright": "© 2025 Alibaba"
+  },
+  {
     "name": "Qwen Image 2512 (BF16, 6-bit)",
     "file": "qwen_image_2512_bf16_q6p.ckpt",
     "prefix": "",
