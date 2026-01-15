@@ -1119,7 +1119,8 @@
       }
     },
     "note": "[FLUX.2 [dev]](https://huggingface.co/black-forest-labs/FLUX.2-dev) is a 32 billion parameter rectified flow transformer capable of generating, editing and combining images based on text instructions.",
-    "copyright": "© 2025 Black Forest Labs"
+    "copyright": "© 2025 Black Forest Labs",
+    "hugging_face_link": "black-forest-labs/FLUX.2-dev"
   },
   {
     "name": "FLUX.2 [dev] (6-bit)",
@@ -1140,7 +1141,8 @@
       }
     },
     "note": "[FLUX.2 [dev]](https://huggingface.co/black-forest-labs/FLUX.2-dev) is a 32 billion parameter rectified flow transformer capable of generating, editing and combining images based on text instructions.",
-    "copyright": "© 2025 Black Forest Labs"
+    "copyright": "© 2025 Black Forest Labs",
+    "hugging_face_link": "black-forest-labs/FLUX.2-dev"
   },
   {
     "name": "FLUX.2 [dev] (Exact)",
