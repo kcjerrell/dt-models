@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1768972775087,
+  "lastUpdate": 1769026673131,
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -363,6 +363,19 @@
       "imageEncoder": "image_vit_l14_f16.ckpt",
       "clipEncoder": "clip_vit_l14_f16.ckpt",
       "diffusionMapping": "kandinsky_diffusion_mapping_f16.ckpt"
+    },
+    {
+      "name": "LTX-2 19B [distilled]",
+      "file": "ltx_2_19b_distilled_q8p.ckpt",
+      "prefix": "",
+      "version": "ltx2",
+      "defaultScale": 16,
+      "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
+      "autoencoder": "ltx_2_audio_video_vae_f16.ckpt",
+      "modifier": "inpainting",
+      "hiresFixScale": 24,
+      "note": "",
+      "copyright": "© 2026 Lightricks"
     },
     {
       "name": "MiniSD v1.4",
