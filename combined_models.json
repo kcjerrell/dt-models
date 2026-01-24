@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1769188624919,
+  "lastUpdate": 1769255460356,
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -1250,7 +1250,7 @@
       "name": "Z Image Turbo 1.0",
       "file": "z_image_turbo_1.0_q8p.ckpt",
       "prefix": "",
-      "version": "zImage",
+      "version": "z_image",
       "defaultScale": 16,
       "textEncoder": "qwen_3_vl_4b_instruct_q8p.ckpt",
       "autoencoder": "flux_1_vae_f16.ckpt",
@@ -1263,7 +1263,7 @@
       "name": "Z Image Turbo 1.0 (6-bit)",
       "file": "z_image_turbo_1.0_q6p.ckpt",
       "prefix": "",
-      "version": "zImage",
+      "version": "z_image",
       "defaultScale": 16,
       "textEncoder": "qwen_3_vl_4b_instruct_q8p.ckpt",
       "autoencoder": "flux_1_vae_f16.ckpt",
