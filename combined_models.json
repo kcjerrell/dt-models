@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1769568955022,
+  "lastUpdate": 1769572904866,
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -1284,6 +1284,31 @@
       "framesPerSecond": 24,
       "note": "[Wan2.2 TI2V 5B](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B) is a state-of-the-art text-image-to-video model developed by Alibaba. It can generate video clips of up to 4 seconds in length. The recommended resolutions are 1280×720. The model supports up to 121 frames, with a recommended shift value of 5.0.",
       "copyright": "© 2025 Alibaba"
+    },
+    {
+      "name": "Z Image Base 1.0",
+      "file": "z_image_1.0_q8p.ckpt",
+      "prefix": "",
+      "version": "z_image",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3_vl_4b_instruct_q8p.ckpt",
+      "autoencoder": "flux_1_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "note": "[Z Image](https://huggingface.co/Tongyi-MAI/Z-Image) is a powerful and highly efficient image generation model with 6B parameters. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 28 to 50 sampling steps recommended.",
+      "copyright": "© 2026 Alibaba",
+      "huggingFaceLink": "Tongyi-MAI/Z-Image"
+    },
+    {
+      "name": "Z Image Base 1.0 (6-bit)",
+      "file": "z_image_1.0_q6p.ckpt",
+      "prefix": "",
+      "version": "z_image",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3_vl_4b_instruct_q8p.ckpt",
+      "autoencoder": "flux_1_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "note": "[Z Image](https://huggingface.co/Tongyi-MAI/Z-Image) is a powerful and highly efficient image generation model with 6B parameters. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 28 to 50 sampling steps recommended.",
+      "copyright": "© 2026 Alibaba"
     },
     {
       "name": "Z Image Turbo 1.0",
