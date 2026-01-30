@@ -17,24 +17,32 @@ async function compileModelData() {
     console.log("compiling model data")
 
     const communityModels = await getCommunityModels("models")
+    sortModels(communityModels)
     await save("./dist/community_models.json", communityModels)
     const officialModels = await getOfficialModels("Model")
+    sortModels(officialModels)
     await save("./dist/official_models.json", officialModels)
 
     const uncuratedModels = await getCommunityModels("uncurated_models")
+    sortModels(uncuratedModels)
     await save("./dist/uncurated_models.json", uncuratedModels)
 
     const communityCnets = await getCommunityModels("controlnets")
+    sortModels(communityCnets)
     await save("./dist/community_controlnets.json", communityCnets)
     const officialCnets = await getOfficialModels("ControlNet")
+    sortModels(officialCnets)
     await save("./dist/official_controlnets.json", officialCnets)
 
     const communityLoras = await getCommunityModels("loras")
+    sortModels(communityLoras)
     await save("./dist/community_loras.json", communityLoras)
     const officialLoras = await getOfficialModels("LoRA")
+    sortModels(officialLoras)
     await save("./dist/official_loras.json", officialLoras)
 
     const communityEmbeddings = await getCommunityModels("embeddings")
+    sortModels(communityEmbeddings)
     await save("./dist/community_embeddings.json", communityEmbeddings)
 
     const combined = {
@@ -49,6 +57,18 @@ async function compileModelData() {
         uncuratedModels
     }
     await save("./dist/combined_models.json", combined)
+
+    const versions = new Set()
+
+    for (const [k, group] of Object.entries(combined)) {
+        if (!Array.isArray(group)) continue
+
+        group.forEach(m => {
+            if (m && typeof m === 'object' && 'version' in m) versions.add(m.version)
+        })
+    }
+
+    await save("./dist/versions.json", { versions: [...versions].sort() })
 }
 
 /**
@@ -112,6 +132,38 @@ async function getOfficialModels(official) {
     catch (e) {
         console.error(e)
         return []
+    }
+}
+
+/**
+ * @typedef Model
+ * @property {string} name
+ * @property {string} file
+ * @property {string} version
+ */
+
+/**
+ * 
+ * @param {Model} a 
+ * @param {Model} b 
+ * @returns {number}
+ */
+function modelsSort(a, b) {
+    const aValue = a.name ?? a.file ?? a.version ?? ""
+    const bValue = b.name ?? b.file ?? b.version ?? ""
+    return aValue.localeCompare(bValue)
+}
+
+/**
+ * sorts in place
+ * @param {Model[]} models
+ */
+function sortModels(models) {
+    try {
+        models.sort(modelsSort)
+    }
+    catch (e) {
+        console.log(e)
     }
 }
 
