@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1769843954444,
+  "lastUpdate": 1769897399586,
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -411,7 +411,7 @@
       "defaultScale": 12,
       "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
       "autoencoder": "ltx_2_audio_video_vae_f16.ckpt",
-      "clipEncoder": "ltx_2_19b_distilled_q8p.ckpt",
+      "clipEncoder": "ltx_2_19b_distilled_q6p.ckpt",
       "hiresFixScale": 24,
       "note": "",
       "copyright": "© 2026 Lightricks"
@@ -2830,7 +2830,7 @@
       "file": "flux_2_dev_q8p.ckpt",
       "upcast_attention": false,
       "text_encoder": "mistral_small_3.2_24b_instruct_2506_q8p.ckpt",
-      "high_precision_autoencoder": true,
+      "high_precision_autoencoder": false,
       "guidance_embed": true,
       "objective": {
         "u": {
@@ -2852,7 +2852,7 @@
       "file": "flux_2_dev_q6p.ckpt",
       "upcast_attention": false,
       "text_encoder": "mistral_small_3.2_24b_instruct_2506_q8p.ckpt",
-      "high_precision_autoencoder": true,
+      "high_precision_autoencoder": false,
       "guidance_embed": true,
       "objective": {
         "u": {
@@ -2874,7 +2874,7 @@
       "file": "flux_2_dev_f16.ckpt",
       "upcast_attention": false,
       "text_encoder": "mistral_small_3.2_24b_instruct_2506_f16.ckpt",
-      "high_precision_autoencoder": true,
+      "high_precision_autoencoder": false,
       "guidance_embed": true,
       "objective": {
         "u": {
@@ -2895,7 +2895,7 @@
       "file": "flux_2_klein_4b_f16.ckpt",
       "upcast_attention": false,
       "text_encoder": "qwen_3_4b_f16.ckpt",
-      "high_precision_autoencoder": true,
+      "high_precision_autoencoder": false,
       "objective": {
         "u": {
           "condition_scale": 1000
@@ -2916,7 +2916,7 @@
       "file": "flux_2_klein_base_4b_f16.ckpt",
       "upcast_attention": false,
       "text_encoder": "qwen_3_4b_f16.ckpt",
-      "high_precision_autoencoder": true,
+      "high_precision_autoencoder": false,
       "objective": {
         "u": {
           "condition_scale": 1000
@@ -2937,7 +2937,7 @@
       "file": "flux_2_klein_9b_q8p.ckpt",
       "upcast_attention": false,
       "text_encoder": "qwen_3_8b_q8p.ckpt",
-      "high_precision_autoencoder": true,
+      "high_precision_autoencoder": false,
       "objective": {
         "u": {
           "condition_scale": 1000
@@ -2959,7 +2959,7 @@
       "file": "flux_2_klein_9b_q6p.ckpt",
       "upcast_attention": false,
       "text_encoder": "qwen_3_8b_q8p.ckpt",
-      "high_precision_autoencoder": true,
+      "high_precision_autoencoder": false,
       "objective": {
         "u": {
           "condition_scale": 1000
@@ -2981,7 +2981,7 @@
       "file": "flux_2_klein_9b_f16.ckpt",
       "upcast_attention": false,
       "text_encoder": "qwen_3_8b_f16.ckpt",
-      "high_precision_autoencoder": true,
+      "high_precision_autoencoder": false,
       "objective": {
         "u": {
           "condition_scale": 1000
@@ -3002,7 +3002,7 @@
       "file": "flux_2_klein_base_9b_q8p.ckpt",
       "upcast_attention": false,
       "text_encoder": "qwen_3_8b_q8p.ckpt",
-      "high_precision_autoencoder": true,
+      "high_precision_autoencoder": false,
       "objective": {
         "u": {
           "condition_scale": 1000
@@ -3024,7 +3024,7 @@
       "file": "flux_2_klein_base_9b_q6p.ckpt",
       "upcast_attention": false,
       "text_encoder": "qwen_3_8b_q8p.ckpt",
-      "high_precision_autoencoder": true,
+      "high_precision_autoencoder": false,
       "objective": {
         "u": {
           "condition_scale": 1000
@@ -3046,7 +3046,7 @@
       "file": "flux_2_klein_base_9b_f16.ckpt",
       "upcast_attention": false,
       "text_encoder": "qwen_3_8b_f16.ckpt",
-      "high_precision_autoencoder": true,
+      "high_precision_autoencoder": false,
       "objective": {
         "u": {
           "condition_scale": 1000
