@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-02-17T18:38:55.504Z",
+  "lastUpdate": "2026-02-19T20:18:57.089Z",
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -372,6 +372,7 @@
       "defaultScale": 12,
       "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
       "autoencoder": "ltx_2_audio_video_vae_f16.ckpt",
+      "modifier": "kontext",
       "clipEncoder": "ltx_2_19b_distilled_q8p.ckpt",
       "hiresFixScale": 24,
       "note": "",
@@ -385,6 +386,7 @@
       "defaultScale": 12,
       "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
       "autoencoder": "ltx_2_audio_video_vae_f16.ckpt",
+      "modifier": "kontext",
       "clipEncoder": "ltx_2_19b_distilled_q8p.ckpt",
       "hiresFixScale": 24,
       "note": "",
@@ -398,6 +400,7 @@
       "defaultScale": 12,
       "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
       "autoencoder": "ltx_2_audio_video_vae_f16.ckpt",
+      "modifier": "kontext",
       "clipEncoder": "ltx_2_19b_distilled_q8p.ckpt",
       "hiresFixScale": 24,
       "note": "",
@@ -411,6 +414,7 @@
       "defaultScale": 12,
       "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
       "autoencoder": "ltx_2_audio_video_vae_f16.ckpt",
+      "modifier": "kontext",
       "clipEncoder": "ltx_2_19b_distilled_q6p.ckpt",
       "hiresFixScale": 24,
       "note": "",
