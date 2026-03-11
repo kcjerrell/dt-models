@@ -577,6 +577,18 @@
     }
   },
   {
+    "name": "LTX-2.3 22B [distilled]",
+    "prefix": "",
+    "is_lo_ha": false,
+    "version": "ltx2.3",
+    "file": "ltx_2.3_22b_distilled_lora_f16.ckpt",
+    "weight": {
+      "value": 1,
+      "lower_bound": -1.5,
+      "upper_bound": 2.5
+    }
+  },
+  {
     "name": "Mascular Slider",
     "prefix": "",
     "is_lo_ha": false,
