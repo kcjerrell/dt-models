@@ -402,7 +402,8 @@
     "clipEncoder": "ltx_2_19b_distilled_q8p.ckpt",
     "hiresFixScale": 24,
     "note": "[LTX-2](https://huggingface.co/Lightricks/LTX-2) is a state-of-the-art open-source audio-video foundation model developed by Lightricks. It can generate synchronized video and audio within a single model. The [distilled] checkpoint is optimized for fast inference; for best results, use 8 sampling steps and set Text Guidance to 1.0.",
-    "copyright": "© 2026 Lightricks"
+    "copyright": "© 2026 Lightricks",
+    "huggingFaceLink": "Lightricks/LTX-2"
   },
   {
     "name": "LTX-2 19B [distilled] (6-bit)",

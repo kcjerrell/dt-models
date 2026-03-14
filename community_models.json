@@ -1338,6 +1338,71 @@
     "copyright": "© 2026 Black Forest Labs"
   },
   {
+    "name": "FLUX.2 [klein] 9B KV",
+    "version": "flux2_9b",
+    "autoencoder": "flux_2_vae_f16.ckpt",
+    "prefix": "",
+    "modifier": "kontext_kv",
+    "default_scale": 16,
+    "hires_fix_scale": 32,
+    "file": "flux_2_klein_9b_kv_q8p.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "qwen_3_8b_q8p.ckpt",
+    "high_precision_autoencoder": false,
+    "objective": {
+      "u": {
+        "condition_scale": 1000
+      }
+    },
+    "padded_text_encoding_length": 512,
+    "note": "[FLUX.2 [klein] 9B KV](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv) is a 9 billion parameter rectified flow transformer capable of generating, editing and combining images based on text instructions. This version contains KV-cache optimization that can speed-up inference.",
+    "copyright": "© 2026 Black Forest Labs",
+    "hugging_face_link": "black-forest-labs/FLUX.2-klein-9b-kv"
+  },
+  {
+    "name": "FLUX.2 [klein] 9B KV (6-bit)",
+    "version": "flux2_9b",
+    "autoencoder": "flux_2_vae_f16.ckpt",
+    "prefix": "",
+    "modifier": "kontext_kv",
+    "default_scale": 16,
+    "hires_fix_scale": 32,
+    "file": "flux_2_klein_9b_kv_q6p.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "qwen_3_8b_q8p.ckpt",
+    "high_precision_autoencoder": false,
+    "objective": {
+      "u": {
+        "condition_scale": 1000
+      }
+    },
+    "padded_text_encoding_length": 512,
+    "note": "[FLUX.2 [klein] 9B KV](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv) is a 9 billion parameter rectified flow transformer capable of generating, editing and combining images based on text instructions. This version contains KV-cache optimization that can speed-up inference.",
+    "copyright": "© 2026 Black Forest Labs",
+    "hugging_face_link": "black-forest-labs/FLUX.2-klein-9b-kv"
+  },
+  {
+    "name": "FLUX.2 [klein] 9B KV (Exact)",
+    "version": "flux2_9b",
+    "autoencoder": "flux_2_vae_f16.ckpt",
+    "prefix": "",
+    "modifier": "kontext_kv",
+    "default_scale": 16,
+    "hires_fix_scale": 32,
+    "file": "flux_2_klein_9b_kv_f16.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "qwen_3_8b_f16.ckpt",
+    "high_precision_autoencoder": false,
+    "objective": {
+      "u": {
+        "condition_scale": 1000
+      }
+    },
+    "padded_text_encoding_length": 512,
+    "note": "[FLUX.2 [klein] 9B KV](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv) is a 9 billion parameter rectified flow transformer capable of generating, editing and combining images based on text instructions. This version contains KV-cache optimization that can speed-up inference.",
+    "copyright": "© 2026 Black Forest Labs"
+  },
+  {
     "upcast_attention": false,
     "prefix": "ghibli style ",
     "text_encoder": "ghibli_v1_clip_vit_l14_f16.ckpt",
