@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "fs-extra": "^11.3.2"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

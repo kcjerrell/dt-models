@@ -185,7 +185,8 @@ async function cloneCommunityModels() {
     cp.execSync("git clone https://github.com/drawthingsai/community-models.git", { stdio: "inherit" })
 }
 
-if (import.meta.filename === process.argv[1]) {
+if (import.meta.filename === process.argv[1] || import.meta.url === "file:///workspaces/dt-models/models.mjs") {
+    console.log("compiling dt model sources...")
     updateModels(false)
         .then(() => process.exit(0))
         .catch(console.error)

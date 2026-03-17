@@ -46,6 +46,7 @@ function toJS(spec) {
         .replace(/^type: \.(\w+)(,?)$/gm, '"type": "$1"$2')
         .replace(/^alternativeDecoderVersion: \.(\w+)(,?)$/gm, '"alternativeDecoderVersion": "$1"$2')
         .replace(/^mmdit.*$/gm, "")
+        .replace(/^latentsUpscalers.*$/gm, "")
         .replace(/^conditioning.*$/gm, "")
         .replace(/^objective.*$/gm, "")
         .replace(/^noiseDiscretization.*$/gm, "")
@@ -58,6 +59,7 @@ function toJS(spec) {
         // return JSON.parse(json)
     } catch (e) {
         if (e?.message?.includes("Unexpected identifier 'specification'")) return null
+        console.log("Could not process specification: ", json)
         console.log(e)
         return null
     }
