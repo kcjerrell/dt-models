@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-03-17T22:20:26.736Z",
+  "lastUpdate": "2026-03-18T04:32:17.762Z",
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -425,7 +425,7 @@
       "name": "LTX-2.3 22B [dev]",
       "file": "ltx_2.3_22b_dev_q8p.ckpt",
       "prefix": "",
-      "version": "ltx2_3",
+      "version": "ltx2.3",
       "defaultScale": 12,
       "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
       "autoencoder": "ltx_2.3_audio_video_vae_f16.ckpt",
@@ -439,7 +439,7 @@
       "name": "LTX-2.3 22B [dev] (6-bit)",
       "file": "ltx_2.3_22b_dev_q6p.ckpt",
       "prefix": "",
-      "version": "ltx2_3",
+      "version": "ltx2.3",
       "defaultScale": 12,
       "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
       "autoencoder": "ltx_2.3_audio_video_vae_f16.ckpt",
@@ -453,7 +453,7 @@
       "name": "LTX-2.3 22B [distilled]",
       "file": "ltx_2.3_22b_distilled_q8p.ckpt",
       "prefix": "",
-      "version": "ltx2_3",
+      "version": "ltx2.3",
       "defaultScale": 12,
       "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
       "autoencoder": "ltx_2.3_audio_video_vae_f16.ckpt",
@@ -468,7 +468,7 @@
       "name": "LTX-2.3 22B [distilled] (6-bit)",
       "file": "ltx_2.3_22b_distilled_q6p.ckpt",
       "prefix": "",
-      "version": "ltx2_3",
+      "version": "ltx2.3",
       "defaultScale": 12,
       "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
       "autoencoder": "ltx_2.3_audio_video_vae_f16.ckpt",
