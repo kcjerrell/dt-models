@@ -184,6 +184,8 @@ export function versionMap(version) {
             return "wan_v2.2_5b"
         case "zImage":
             return "z_image"
+        case "ltx2_3":
+            return "ltx2.3"
         default:
             return version
     }
