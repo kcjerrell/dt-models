@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-03-26T23:17:44.565Z",
+  "lastUpdate": "2026-03-27T07:50:43.634Z",
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -98,6 +98,21 @@
       "copyright": "© 2026 Black Forest Labs"
     },
     {
+      "name": "FLUX.2 [klein] 4B (8-bit S)",
+      "file": "flux_2_klein_4b_i8x.ckpt",
+      "prefix": "",
+      "version": "flux2_4b",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3_4b_q8p.ckpt",
+      "autoencoder": "flux_2_vae_f16.ckpt",
+      "modifier": "kontext",
+      "paddedTextEncodingLength": 512,
+      "hiresFixScale": 24,
+      "note": "[FLUX.2 [klein] 4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-4B) is a 4 billion parameter rectified flow transformer capable of generating, editing and combining images based on text instructions.",
+      "copyright": "© 2026 Black Forest Labs",
+      "huggingFaceLink": "black-forest-labs/FLUX.2-klein-4B"
+    },
+    {
       "name": "FLUX.2 [klein] 4B Base",
       "file": "flux_2_klein_base_4b_q8p.ckpt",
       "prefix": "",
@@ -125,6 +140,21 @@
       "hiresFixScale": 24,
       "note": "[FLUX.2 [klein] 4B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) is a 4 billion parameter rectified flow transformer capable of generating, editing and combining images based on text instructions.",
       "copyright": "© 2026 Black Forest Labs"
+    },
+    {
+      "name": "FLUX.2 [klein] 4B Base (8-bit S)",
+      "file": "flux_2_klein_base_4b_i8x.ckpt",
+      "prefix": "",
+      "version": "flux2_4b",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3_4b_q8p.ckpt",
+      "autoencoder": "flux_2_vae_f16.ckpt",
+      "modifier": "kontext",
+      "paddedTextEncodingLength": 512,
+      "hiresFixScale": 24,
+      "note": "[FLUX.2 [klein] 4B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) is a 4 billion parameter rectified flow transformer capable of generating, editing and combining images based on text instructions.",
+      "copyright": "© 2026 Black Forest Labs",
+      "huggingFaceLink": "black-forest-labs/FLUX.2-klein-base-4B"
     },
     {
       "name": "Fooocus Inpaint SDXL v2.6",
@@ -450,6 +480,20 @@
       "copyright": "© 2026 Lightricks"
     },
     {
+      "name": "LTX-2.3 22B [dev] (8-bit S)",
+      "file": "ltx_2.3_22b_dev_i8x.ckpt",
+      "prefix": "",
+      "version": "ltx2.3",
+      "defaultScale": 12,
+      "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
+      "autoencoder": "ltx_2.3_audio_video_vae_f16.ckpt",
+      "modifier": "kontext",
+      "clipEncoder": "ltx_2.3_22b_dev_i8x.ckpt",
+      "hiresFixScale": 24,
+      "note": "[LTX-2.3](https://huggingface.co/Lightricks/LTX-2.3) is a significant update to LTX-2 with improved audio and visual quality and enhanced prompt adherence. It is a state-of-the-art open-source audio-video foundation model developed by Lightricks and can generate synchronized video and audio within a single model. The [dev] checkpoint is the full model variant and is fully trainable. For best results, set Text Guidance to 3.5 and use 20–30 sampling steps.",
+      "copyright": "© 2026 Lightricks"
+    },
+    {
       "name": "LTX-2.3 22B [distilled]",
       "file": "ltx_2.3_22b_distilled_q8p.ckpt",
       "prefix": "",
@@ -477,6 +521,21 @@
       "hiresFixScale": 24,
       "note": "[LTX-2.3](https://huggingface.co/Lightricks/LTX-2.3) is a significant update to LTX-2 with improved audio and visual quality and enhanced prompt adherence. It is a state-of-the-art open-source audio-video foundation model developed by Lightricks and can generate synchronized video and audio within a single model. The [distilled] checkpoint is the distilled version of the full model and is optimized for fast inference; for best results, use 8 sampling steps and set Text Guidance to 1.0.",
       "copyright": "© 2026 Lightricks"
+    },
+    {
+      "name": "LTX-2.3 22B [distilled] (8-bit S)",
+      "file": "ltx_2.3_22b_distilled_i8x.ckpt",
+      "prefix": "",
+      "version": "ltx2.3",
+      "defaultScale": 12,
+      "textEncoder": "gemma_3_12b_it_qat_q8p.ckpt",
+      "autoencoder": "ltx_2.3_audio_video_vae_f16.ckpt",
+      "modifier": "kontext",
+      "clipEncoder": "ltx_2.3_22b_distilled_i8x.ckpt",
+      "hiresFixScale": 24,
+      "note": "[LTX-2.3](https://huggingface.co/Lightricks/LTX-2.3) is a significant update to LTX-2 with improved audio and visual quality and enhanced prompt adherence. It is a state-of-the-art open-source audio-video foundation model developed by Lightricks and can generate synchronized video and audio within a single model. The [distilled] checkpoint is the distilled version of the full model and is optimized for fast inference; for best results, use 8 sampling steps and set Text Guidance to 1.0.",
+      "copyright": "© 2026 Lightricks",
+      "huggingFaceLink": "Lightricks/LTX-2.3"
     },
     {
       "name": "MiniSD v1.4",
@@ -599,8 +658,34 @@
       "copyright": "© 2025 Alibaba"
     },
     {
+      "name": "Qwen Image 2512 (8-bit S)",
+      "file": "qwen_image_2512_i8x.ckpt",
+      "prefix": "",
+      "version": "qwen_image",
+      "defaultScale": 16,
+      "textEncoder": "qwen_2.5_vl_7b_q8p.ckpt",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "note": "[Qwen Image 2512](https://huggingface.co/Qwen/Qwen-Image-2512) is the december update of Qwen Image model with improvements on enhanced human realism, finer natural detail and improved text rendering. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended.",
+      "copyright": "© 2025 Alibaba",
+      "huggingFaceLink": "Qwen/Qwen-Image-2512"
+    },
+    {
       "name": "Qwen Image 2512 (BF16, 6-bit)",
       "file": "qwen_image_2512_bf16_q6p.ckpt",
+      "prefix": "",
+      "version": "qwen_image",
+      "defaultScale": 16,
+      "textEncoder": "qwen_2.5_vl_7b_q8p.ckpt",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "isBf16": true,
+      "note": "[Qwen Image 2512](https://huggingface.co/Qwen/Qwen-Image-2512) is the december update of Qwen Image model with improvements on enhanced human realism, finer natural detail and improved text rendering. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended. The BF16 version is only compatible with macOS 15, iOS 18 and above.",
+      "copyright": "© 2025 Alibaba"
+    },
+    {
+      "name": "Qwen Image 2512 (BF16, 8-bit S)",
+      "file": "qwen_image_2512_bf16_i8x.ckpt",
       "prefix": "",
       "version": "qwen_image",
       "defaultScale": 16,
@@ -742,8 +827,38 @@
       "copyright": "© 2025 Alibaba"
     },
     {
+      "name": "Qwen Image Edit 2511 (8-bit S)",
+      "file": "qwen_image_edit_2511_i8x.ckpt",
+      "prefix": "",
+      "version": "qwen_image",
+      "defaultScale": 16,
+      "textEncoder": "qwen_2.5_vl_7b_q8p.ckpt",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "modifier": "qwenimageEdit2511",
+      "clipEncoder": "qwen_2.5_vl_7b_vit_f16.ckpt",
+      "hiresFixScale": 24,
+      "note": "[Qwen Image Edit 2511](https://huggingface.co/Qwen/Qwen-Image-Edit-2511) is an enhanced image editing model that significantly improves character consistency, mitigates image drift, and strengthens multi-person fusion capabilities compared to its predecessor (2509). It integrates popular LoRA features natively, enabling advanced lighting control and viewpoint generation without extra tuning, alongside specialized industrial design and geometric reasoning capabilities. It is Apache 2.0-licensed, with 40 inference steps recommended for optimal results.",
+      "copyright": "© 2025 Alibaba",
+      "huggingFaceLink": "Qwen/Qwen-Image-Edit-2511"
+    },
+    {
       "name": "Qwen Image Edit 2511 (BF16, 6-bit)",
       "file": "qwen_image_edit_2511_bf16_q6p.ckpt",
+      "prefix": "",
+      "version": "qwen_image",
+      "defaultScale": 16,
+      "textEncoder": "qwen_2.5_vl_7b_q8p.ckpt",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "modifier": "qwenimageEdit2511",
+      "clipEncoder": "qwen_2.5_vl_7b_vit_f16.ckpt",
+      "hiresFixScale": 24,
+      "isBf16": true,
+      "note": "[Qwen Image Edit 2511](https://huggingface.co/Qwen/Qwen-Image-Edit-2511) is an enhanced image editing model that significantly improves character consistency, mitigates image drift, and strengthens multi-person fusion capabilities compared to its predecessor (2509). It integrates popular LoRA features natively, enabling advanced lighting control and viewpoint generation without extra tuning, alongside specialized industrial design and geometric reasoning capabilities. It is Apache 2.0-licensed, with 40 inference steps recommended for optimal results. The BF16 version is only compatible with macOS 15, iOS 18 and above.",
+      "copyright": "© 2025 Alibaba"
+    },
+    {
+      "name": "Qwen Image Edit 2511 (BF16, 8-bit S)",
+      "file": "qwen_image_edit_2511_bf16_i8x.ckpt",
       "prefix": "",
       "version": "qwen_image",
       "defaultScale": 16,
@@ -1373,6 +1488,19 @@
       "copyright": "© 2026 Alibaba"
     },
     {
+      "name": "Z Image Base 1.0 (8-bit S)",
+      "file": "z_image_1.0_i8x.ckpt",
+      "prefix": "",
+      "version": "z_image",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3_vl_4b_instruct_q8p.ckpt",
+      "autoencoder": "flux_1_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "note": "[Z Image](https://huggingface.co/Tongyi-MAI/Z-Image) is a powerful and highly efficient image generation model with 6B parameters. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 28 to 50 sampling steps recommended.",
+      "copyright": "© 2026 Alibaba",
+      "huggingFaceLink": "Tongyi-MAI/Z-Image"
+    },
+    {
       "name": "Z Image Turbo 1.0",
       "file": "z_image_turbo_1.0_q8p.ckpt",
       "prefix": "",
@@ -1396,6 +1524,19 @@
       "hiresFixScale": 24,
       "note": "[Z Image Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo) is a powerful and highly efficient image generation model with 6B parameters. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 8 sampling steps recommended.",
       "copyright": "© 2025 Alibaba"
+    },
+    {
+      "name": "Z Image Turbo 1.0 (8-bit S)",
+      "file": "z_image_turbo_1.0_i8x.ckpt",
+      "prefix": "",
+      "version": "z_image",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3_vl_4b_instruct_q8p.ckpt",
+      "autoencoder": "flux_1_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "note": "[Z Image Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo) is a powerful and highly efficient image generation model with 6B parameters. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 8 sampling steps recommended.",
+      "copyright": "© 2025 Alibaba",
+      "huggingFaceLink": "Tongyi-MAI/Z-Image-Turbo"
     }
   ],
   "officialCnets": [
