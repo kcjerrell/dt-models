@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-03-29T01:09:40.048Z",
+  "lastUpdate": "2026-03-29T06:04:34.844Z",
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -296,6 +296,26 @@
       "note": "[HiDream-I1 [dev]](https://huggingface.co/HiDream-ai/HiDream-I1-Dev) is a state-of-the-art open-source image generation model known for its strong prompt adherence across diverse styles, including photorealistic, cartoon, and artistic. It is MIT-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 20–30 sampling steps recommended. Text guidance is not effective for this model."
     },
     {
+      "name": "HiDream I1 [dev] (8-bit S)",
+      "file": "hidream_i1_dev_i8x.ckpt",
+      "prefix": "",
+      "version": "hidream_i1",
+      "defaultScale": 16,
+      "textEncoder": "llama_3.1_8b_instruct_q8p.ckpt",
+      "autoencoder": "flux_1_vae_f16.ckpt",
+      "clipEncoder": "long_clip_vit_l14_f16.ckpt",
+      "additionalClipEncoders": [
+        "long_open_clip_vit_bigg14_f16.ckpt"
+      ],
+      "t5Encoder": "t5_xxl_encoder_q6p.ckpt",
+      "highPrecisionAutoencoder": true,
+      "guidanceEmbed": true,
+      "paddedTextEncodingLength": 128,
+      "hiresFixScale": 24,
+      "note": "[HiDream-I1 [dev]](https://huggingface.co/HiDream-ai/HiDream-I1-Dev) is a state-of-the-art open-source image generation model known for its strong prompt adherence across diverse styles, including photorealistic, cartoon, and artistic. It is MIT-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 20–30 sampling steps recommended. Text guidance is not effective for this model.",
+      "huggingFaceLink": "HiDream-ai/HiDream-I1-Dev"
+    },
+    {
       "name": "HiDream I1 [fast]",
       "file": "hidream_i1_fast_q8p.ckpt",
       "prefix": "",
@@ -335,6 +355,26 @@
       "note": "[HiDream-I1 [fast]](https://huggingface.co/HiDream-ai/HiDream-I1-Fast) is a state-of-the-art open-source image generation model known for its strong prompt adherence across diverse styles, including photorealistic, cartoon, and artistic. It is MIT-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 10–20 sampling steps recommended. Text guidance is not effective for this model."
     },
     {
+      "name": "HiDream I1 [fast] (8-bit S)",
+      "file": "hidream_i1_fast_i8x.ckpt",
+      "prefix": "",
+      "version": "hidream_i1",
+      "defaultScale": 16,
+      "textEncoder": "llama_3.1_8b_instruct_q8p.ckpt",
+      "autoencoder": "flux_1_vae_f16.ckpt",
+      "clipEncoder": "long_clip_vit_l14_f16.ckpt",
+      "additionalClipEncoders": [
+        "long_open_clip_vit_bigg14_f16.ckpt"
+      ],
+      "t5Encoder": "t5_xxl_encoder_q6p.ckpt",
+      "highPrecisionAutoencoder": true,
+      "isConsistencyModel": true,
+      "paddedTextEncodingLength": 128,
+      "hiresFixScale": 24,
+      "note": "[HiDream-I1 [fast]](https://huggingface.co/HiDream-ai/HiDream-I1-Fast) is a state-of-the-art open-source image generation model known for its strong prompt adherence across diverse styles, including photorealistic, cartoon, and artistic. It is MIT-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 10–20 sampling steps recommended. Text guidance is not effective for this model.",
+      "huggingFaceLink": "HiDream-ai/HiDream-I1-Fast"
+    },
+    {
       "name": "HiDream I1 [full]",
       "file": "hidream_i1_full_q8p.ckpt",
       "prefix": "",
@@ -370,6 +410,25 @@
       "paddedTextEncodingLength": 128,
       "hiresFixScale": 24,
       "note": "[HiDream-I1 [full]](https://huggingface.co/HiDream-ai/HiDream-I1-Full) is a state-of-the-art open-source image generation model known for its exceptional prompt adherence across a wide range of styles, including photorealistic, cartoon, and artistic. It is MIT-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended."
+    },
+    {
+      "name": "HiDream I1 [full] (8-bit S)",
+      "file": "hidream_i1_full_i8x.ckpt",
+      "prefix": "",
+      "version": "hidream_i1",
+      "defaultScale": 16,
+      "textEncoder": "llama_3.1_8b_instruct_q8p.ckpt",
+      "autoencoder": "flux_1_vae_f16.ckpt",
+      "clipEncoder": "long_clip_vit_l14_f16.ckpt",
+      "additionalClipEncoders": [
+        "long_open_clip_vit_bigg14_f16.ckpt"
+      ],
+      "t5Encoder": "t5_xxl_encoder_q6p.ckpt",
+      "highPrecisionAutoencoder": true,
+      "paddedTextEncodingLength": 128,
+      "hiresFixScale": 24,
+      "note": "[HiDream-I1 [full]](https://huggingface.co/HiDream-ai/HiDream-I1-Full) is a state-of-the-art open-source image generation model known for its exceptional prompt adherence across a wide range of styles, including photorealistic, cartoon, and artistic. It is MIT-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended.",
+      "huggingFaceLink": "HiDream-ai/HiDream-I1-Full"
     },
     {
       "name": "Instruct Pix2Pix",
