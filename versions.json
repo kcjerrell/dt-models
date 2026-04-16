@@ -2,6 +2,7 @@
   "versions": [
     "auraflow",
     "cosmos2_5_2b",
+    "ernieImage",
     "flux1",
     "flux2",
     "flux2_4b",

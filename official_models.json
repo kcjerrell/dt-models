@@ -49,6 +49,19 @@
     "autoencoder": "sdxl_vae_v1.0_f16.ckpt"
   },
   {
+    "name": "ERNIE Image Turbo",
+    "file": "ernie_image_turbo_f16.ckpt",
+    "prefix": "",
+    "version": "ernieImage",
+    "defaultScale": 16,
+    "textEncoder": "ministral_3_3b_f16.ckpt",
+    "autoencoder": "flux_2_vae_f16.ckpt",
+    "hiresFixScale": 24,
+    "note": "[ERNIE-Image-Turbo](https://huggingface.co/baidu/ERNIE-Image-Turbo) is a distilled rectified-flow image model from Baidu. It uses the Ministral 3 text encoder family together with the FLUX.2 VAE path, and works best with trailing samplers, CFG 1, and around 8 sampling steps.",
+    "copyright": "© 2026 Baidu",
+    "huggingFaceLink": "baidu/ERNIE-Image-Turbo"
+  },
+  {
     "name": "FLUX.1 [schnell]",
     "file": "flux_1_schnell_q8p.ckpt",
     "prefix": "",
