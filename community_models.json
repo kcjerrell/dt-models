@@ -38,6 +38,72 @@
     "text_encoder": "analog_v1_clip_vit_l14_f16.ckpt"
   },
   {
+    "name": "Anima Preview 3",
+    "version": "cosmos2.5_2b",
+    "autoencoder": "qwen_image_vae_f16.ckpt",
+    "prefix": "",
+    "default_scale": 16,
+    "hires_fix_scale": 32,
+    "clip_encoder": "anima_preview_3_f16.ckpt",
+    "file": "anima_preview_3_f16.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "qwen_3_0.6b_q8p.ckpt",
+    "high_precision_autoencoder": false,
+    "objective": {
+      "u": {
+        "condition_scale": 1
+      }
+    },
+    "padded_text_encoding_length": 512,
+    "note": "[Anima](https://huggingface.co/circlestone-labs/Anima) is a 2B text-to-image model from CircleStone Labs and Comfy Org, focused on anime concepts, characters, styles, illustrations, and other non-photorealistic art. Preview 3 is an intermediate checkpoint built on NVIDIA Cosmos and released under the CircleStone Labs non-commercial license. It is intended for around 1MP generation, with 30-50 sampling steps and CFG 4-5 recommended.",
+    "copyright": "© 2026 CircleStone Labs",
+    "hugging_face_link": "circlestone-labs/Anima"
+  },
+  {
+    "name": "Anima Preview 3 (8-bit S)",
+    "version": "cosmos2.5_2b",
+    "autoencoder": "qwen_image_vae_f16.ckpt",
+    "prefix": "",
+    "default_scale": 16,
+    "hires_fix_scale": 32,
+    "clip_encoder": "anima_preview_3_i8x.ckpt",
+    "file": "anima_preview_3_i8x.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "qwen_3_0.6b_q8p.ckpt",
+    "high_precision_autoencoder": false,
+    "objective": {
+      "u": {
+        "condition_scale": 1
+      }
+    },
+    "padded_text_encoding_length": 512,
+    "note": "[Anima](https://huggingface.co/circlestone-labs/Anima) is a 2B text-to-image model from CircleStone Labs and Comfy Org, focused on anime concepts, characters, styles, illustrations, and other non-photorealistic art. Preview 3 is an intermediate checkpoint built on NVIDIA Cosmos and released under the CircleStone Labs non-commercial license. It is intended for around 1MP generation, with 30-50 sampling steps and CFG 4-5 recommended.",
+    "copyright": "© 2026 CircleStone Labs",
+    "hugging_face_link": "circlestone-labs/Anima"
+  },
+  {
+    "name": "Anima Preview 3 (8-bit)",
+    "version": "cosmos2.5_2b",
+    "autoencoder": "qwen_image_vae_f16.ckpt",
+    "prefix": "",
+    "default_scale": 16,
+    "hires_fix_scale": 32,
+    "clip_encoder": "anima_preview_3_q8p.ckpt",
+    "file": "anima_preview_3_q8p.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "qwen_3_0.6b_q8p.ckpt",
+    "high_precision_autoencoder": false,
+    "objective": {
+      "u": {
+        "condition_scale": 1
+      }
+    },
+    "padded_text_encoding_length": 512,
+    "note": "[Anima](https://huggingface.co/circlestone-labs/Anima) is a 2B text-to-image model from CircleStone Labs and Comfy Org, focused on anime concepts, characters, styles, illustrations, and other non-photorealistic art. Preview 3 is an intermediate checkpoint built on NVIDIA Cosmos and released under the CircleStone Labs non-commercial license. It is intended for around 1MP generation, with 30-50 sampling steps and CFG 4-5 recommended.",
+    "copyright": "© 2026 CircleStone Labs",
+    "hugging_face_link": "circlestone-labs/Anima"
+  },
+  {
     "autoencoder": "sdxl_vae_v1.0_f16.ckpt",
     "default_scale": 16,
     "prefix": "",
@@ -694,6 +760,41 @@
     "default_scale": 8,
     "text_encoder": "eldenring_v3_clip_vit_l14_f16.ckpt",
     "version": "v1"
+  },
+  {
+    "name": "ERNIE Image Base 1.0 (Exact)",
+    "version": "ernie_image",
+    "autoencoder": "flux_2_vae_f16.ckpt",
+    "prefix": "",
+    "default_scale": 16,
+    "hires_fix_scale": 24,
+    "file": "ernie_image_f16.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "ministral_3_3b_f16.ckpt",
+    "objective": {
+      "u": {
+        "condition_scale": 1000
+      }
+    },
+    "note": "[ERNIE-Image](https://huggingface.co/baidu/ERNIE-Image) is Baidu's Apache 2.0-licensed 8B single-stream DiT text-to-image model. It focuses on instruction following, text rendering, and structured layouts such as posters, comics, and multi-panel compositions. The base model is intended for higher-fidelity generation, with 50 sampling steps recommended."
+  },
+  {
+    "name": "ERNIE Image Turbo 1.0 (Exact)",
+    "version": "ernie_image",
+    "autoencoder": "flux_2_vae_f16.ckpt",
+    "prefix": "",
+    "default_scale": 16,
+    "hires_fix_scale": 24,
+    "file": "ernie_image_turbo_f16.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "ministral_3_3b_f16.ckpt",
+    "high_precision_autoencoder": false,
+    "objective": {
+      "u": {
+        "condition_scale": 1000
+      }
+    },
+    "note": "[ERNIE-Image-Turbo](https://huggingface.co/baidu/ERNIE-Image-Turbo) is Baidu's Apache 2.0-licensed distilled release of ERNIE-Image, optimized with DMD and RL for fast generation. It keeps the same focus on instruction following, text rendering, and structured layouts, while targeting strong results with CFG 1 and 8 sampling steps."
   },
   {
     "upcast_attention": false,
