@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-04-17T19:48:44.845Z",
+  "lastUpdate": "2026-04-17T21:30:28.185Z",
   "officialModels": [
     {
       "name": "Anima Preview 3",
@@ -7145,11 +7145,11 @@
       }
     },
     {
-      "name": "LTX-2.3 22B [distilled]",
+      "name": "LTX-2.3 22B [distilled] 1.1",
       "prefix": "",
       "is_lo_ha": false,
       "version": "ltx2.3",
-      "file": "ltx_2.3_22b_distilled_lora_f16.ckpt",
+      "file": "ltx_2.3_22b_distilled_1.1_lora_f16.ckpt",
       "weight": {
         "value": 1,
         "lower_bound": -1.5,
