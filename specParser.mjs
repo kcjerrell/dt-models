@@ -186,6 +186,8 @@ export function versionMap(version) {
             return "z_image"
         case "ltx2_3":
             return "ltx2.3"
+        case "ernieImage":
+            return "ernie_image"
         default:
             return version
     }
