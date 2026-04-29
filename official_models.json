@@ -1156,6 +1156,30 @@
     "clipEncoder": "clip_vit_l14_f16.ckpt"
   },
   {
+    "name": "SeedVR2 3B",
+    "file": "seedvr2_3b_f16.ckpt",
+    "prefix": "",
+    "version": "seedvr2_3b",
+    "defaultScale": 8,
+    "textEncoder": "seedvr2_3b_f16.ckpt",
+    "autoencoder": "seedvr2_vae_f16.ckpt",
+    "modifier": "inpainting",
+    "latentsScalingFactor": 0.9152,
+    "note": "SeedVR2 is wired as an edit / inpainting model. Text embeddings are read from the diffusion checkpoint instead of a separate text encoder."
+  },
+  {
+    "name": "SeedVR2 7B",
+    "file": "seedvr2_7b_f16.ckpt",
+    "prefix": "",
+    "version": "seedvr2_7b",
+    "defaultScale": 8,
+    "textEncoder": "seedvr2_7b_f16.ckpt",
+    "autoencoder": "seedvr2_vae_f16.ckpt",
+    "modifier": "inpainting",
+    "latentsScalingFactor": 0.9152,
+    "note": "SeedVR2 is wired as an edit / inpainting model. Text embeddings are read from the diffusion checkpoint instead of a separate text encoder."
+  },
+  {
     "name": "Stable Diffusion v1.4",
     "file": "sd_v1.4_f16.ckpt",
     "prefix": "",
