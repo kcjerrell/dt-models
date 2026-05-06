@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "name": "Fooocus Inpaint v2.6",
+    "file": "fooocus_inpaint_v2.6_lora_f16.ckpt",
+    "prefix": "",
+    "version": "sdxl_base_v0.9",
+    "modifier": "inpainting"
+  },
+  {
+    "name": "Fooocus Inpaint v2.6 (8-bit)",
+    "file": "fooocus_inpaint_v2.6_lora_q8p.ckpt",
+    "prefix": "",
+    "version": "sdxl_base_v0.9",
+    "modifier": "inpainting"
+  },
+  {
+    "name": "Foreground to Blending",
+    "file": "layer_xl_fg2ble_v1.0_lora_f16.ckpt",
+    "prefix": "",
+    "version": "sdxl_base_v0.9",
+    "modifier": "inpainting"
+  },
+  {
+    "name": "LCM SDXL Base (1.0)",
+    "file": "lcm_sd_xl_base_1.0_lora_f16.ckpt",
+    "prefix": "",
+    "version": "sdxl_base_v0.9",
+    "isConsistencyModel": true
+  },
+  {
+    "name": "LCM SDXL Refiner (1.0)",
+    "file": "lcm_sd_xl_refiner_1.0_lora_f16.ckpt",
+    "prefix": "",
+    "version": "sdxl_refiner_v0.9",
+    "isConsistencyModel": true
+  },
+  {
+    "name": "LCM Stable Diffusion v1.5",
+    "file": "lcm_sd_v1.5_lora_f16.ckpt",
+    "prefix": "",
+    "version": "v1",
+    "isConsistencyModel": true
+  },
+  {
+    "name": "SDXL Offset (1.0)",
+    "file": "sdxl_offset_v1.0_lora_f16.ckpt",
+    "prefix": "",
+    "version": "sdxl_base_v0.9"
+  },
+  {
+    "name": "TCD SDXL Base (1.0)",
+    "file": "tcd_sd_xl_base_1.0_lora_f16.ckpt",
+    "prefix": "",
+    "version": "sdxl_base_v0.9",
+    "isConsistencyModel": true
+  },
+  {
+    "name": "TCD Stable Diffusion v1.5",
+    "file": "tcd_sd_v1.5_lora_f16.ckpt",
+    "prefix": "",
+    "version": "v1",
+    "isConsistencyModel": true
+  },
+  {
+    "name": "Transparent Image",
+    "file": "layer_flux_1_transparent_lora_f16.ckpt",
+    "prefix": "",
+    "version": "flux1",
+    "alternativeDecoder": "flux_1_transparent_vae_decoder_f16.ckpt",
+    "alternativeDecoderVersion": "transparent"
+  },
+  {
+    "name": "Transparent Image (Attention Injection)",
+    "file": "layer_xl_transparent_attn_v1.0_lora_f16.ckpt",
+    "prefix": "",
+    "version": "sdxl_base_v0.9",
+    "alternativeDecoder": "transparent_vae_decoder_v1.0_f16.ckpt",
+    "alternativeDecoderVersion": "transparent"
+  }
+]
