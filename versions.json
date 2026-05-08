@@ -1,6 +1,5 @@
 {
   "versions": [
-    "auraflow",
     "cosmos2.5_2b",
     "ernie_image",
     "flux1",
@@ -9,24 +8,18 @@
     "flux2_9b",
     "hidream_i1",
     "hunyuan_video",
-    "kandinsky2.1",
     "ltx2",
     "ltx2.3",
-    "pixart",
     "qwen_image",
     "sd3",
     "sd3_large",
     "sdxl_base_v0.9",
-    "sdxl_refiner_v0.9",
-    "seedvr2_3b",
-    "seedvr2_7b",
     "ssd_1b",
     "svd_i2v",
     "v1",
     "v2",
     "wan_v2.1_1.3b",
     "wan_v2.1_14b",
-    "wan_v2.2_5b",
     "wurstchen_v3.0_stage_c",
     "z_image"
   ]
