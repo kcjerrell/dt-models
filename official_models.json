@@ -505,6 +505,19 @@
     "huggingFaceLink": "HiDream-ai/HiDream-I1-Full"
   },
   {
+    "name": "HiDream O1 [dev] 2604",
+    "file": "hidream_o1_dev_2604_f16.ckpt",
+    "prefix": "",
+    "version": "hiDreamO1",
+    "defaultScale": 16,
+    "textEncoder": "hidream_o1_dev_2604_f16.ckpt",
+    "autoencoder": "hidream_o1_dev_2604_f16.ckpt",
+    "noiseScalingFactor": 7.5,
+    "paddedTextEncodingLength": 0,
+    "note": "HiDream O1 is a Qwen3-style image generation model with no external text encoder or VAE. It uses RGB patch diffusion directly with a model-specific initial noise scale.",
+    "huggingFaceLink": "HiDream-ai/HiDream-O1"
+  },
+  {
     "name": "Instruct Pix2Pix",
     "file": "instruct_pix2pix_22000_f16.ckpt",
     "prefix": "",
