@@ -518,6 +518,21 @@
     "huggingFaceLink": "HiDream-ai/HiDream-O1"
   },
   {
+    "name": "Ideogram 4 (8-bit S)",
+    "file": "ideogram_4_i8x.ckpt",
+    "prefix": "",
+    "version": "ideogram4",
+    "defaultScale": 16,
+    "textEncoder": "qwen_3_vl_8b_instruct_q8p.ckpt",
+    "autoencoder": "flux_2_vae_f16.ckpt",
+    "latentsScalingFactor": 1,
+    "paddedTextEncodingLength": 0,
+    "hiresFixScale": 24,
+    "note": "[Ideogram 4](https://huggingface.co/ideogram-ai/ideogram-4-fp8) is Ideogram's non-commercial text-to-image release. The Hugging Face release packages the FP8 checkpoint for Diffusers as an Ideogram4Pipeline flow-matching DiT, with benchmark material focused on typography, design, and image quality. This Draw Things entry uses Qwen3-VL 8B Instruct for text encoding and the FLUX.2 VAE; no separate unconditional model download is required.",
+    "copyright": "© 2026 Ideogram",
+    "huggingFaceLink": "ideogram-ai/ideogram-4-fp8"
+  },
+  {
     "name": "Instruct Pix2Pix",
     "file": "instruct_pix2pix_22000_f16.ckpt",
     "prefix": "",
