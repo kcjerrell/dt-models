@@ -555,6 +555,33 @@
     "diffusionMapping": "kandinsky_diffusion_mapping_f16.ckpt"
   },
   {
+    "name": "Krea 2 Raw (8-bit S)",
+    "file": "krea_2_raw_i8x.ckpt",
+    "prefix": "",
+    "version": "krea2",
+    "defaultScale": 16,
+    "textEncoder": "qwen_3_vl_4b_q8p.ckpt",
+    "autoencoder": "qwen_image_vae_f16.ckpt",
+    "clipEncoder": "krea_2_raw_i8x.ckpt",
+    "paddedTextEncodingLength": 0,
+    "hiresFixScale": 24,
+    "note": "Krea 2 Raw is the higher-step Krea 2 text-to-image flow checkpoint using Qwen3-VL text conditioning and the Qwen Image/Wan VAE latent contract. It is intended for CFG-guided generation; 1024x1024 at CFG 4 with around 30 sampling steps is the validated bring-up target."
+  },
+  {
+    "name": "Krea 2 Turbo (8-bit S)",
+    "file": "krea_2_turbo_i8x.ckpt",
+    "prefix": "",
+    "version": "krea2",
+    "defaultScale": 16,
+    "textEncoder": "qwen_3_vl_4b_q8p.ckpt",
+    "autoencoder": "qwen_image_vae_f16.ckpt",
+    "clipEncoder": "krea_2_turbo_i8x.ckpt",
+    "isConsistencyModel": true,
+    "paddedTextEncodingLength": 0,
+    "hiresFixScale": 24,
+    "note": "Krea 2 Turbo is a fast text-to-image flow model using Qwen3-VL text conditioning and the Qwen Image/Wan VAE latent contract. The turbo checkpoint is intended for low-step generation; 1024x1024 at CFG 1 with 4 sampling steps is the validated bring-up target."
+  },
+  {
     "name": "LTX-2 19B [dev]",
     "file": "ltx_2_19b_dev_q8p.ckpt",
     "prefix": "",
