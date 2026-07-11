@@ -18,6 +18,8 @@ export async function updateModels(skipClone = false) {
 async function compileModelData() {
     console.log("compiling model data")
 
+    await fse.ensureDir("./dist")
+
     const communityModels = await getCommunityModels("models")
     sortModels(communityModels)
     await save("./dist/community_models.json", communityModels)
