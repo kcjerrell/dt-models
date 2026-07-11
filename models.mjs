@@ -3,8 +3,10 @@ import fse from "fs-extra"
 import cp from "child_process"
 
 export async function updateModels(skipClone = false) {
-    if (!skipClone)
+    if (!skipClone) {
+        await cloneCommunity()
         await cloneCommunityModels()
+    }
     await compileModelData()
 }
 
@@ -179,10 +181,17 @@ async function save(filename, data) {
 /** clones the community models repo. Sometimes this can be slow. */
 async function cloneCommunityModels() {
     console.log("removing old generated files")
-    fse.emptyDirSync("./dist")
     fse.emptyDirSync("./community-models")
     console.log("cloning draw things community models")
     cp.execSync("git clone https://github.com/drawthingsai/community-models.git", { stdio: "inherit" })
+}
+
+/** clones the community repo. Sometimes this can be slow. */
+async function cloneCommunity() {
+    console.log("removing old generated files")
+    fse.emptyDirSync("./draw-things-community")
+    console.log("cloning draw things community models")
+    cp.execSync("git clone https://github.com/drawthingsai/draw-things-community.git", { stdio: "inherit" })
 }
 
 if (import.meta.filename === process.argv[1] || import.meta.url === "file:///workspaces/dt-models/models.mjs") {

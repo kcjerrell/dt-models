@@ -9,18 +9,21 @@ import fse from 'fs-extra'
  * @returns
  */
 export async function compileOfficialModels(name) {
-    const res = await fetch(
-        `https://api.github.com/repos/drawthingsai/draw-things-community/contents/Libraries/ModelZoo/Sources/${name}Zoo.swift`
-    )
-    const src = Buffer.from((await res.json()).content, "base64").toString(
-        "utf-8"
-    )
+    // const res = await fetch(
+    //     `https://api.github.com/repos/drawthingsai/draw-things-community/contents/Libraries/ModelZoo/Sources/${name}Zoo.swift`
+    // )
+    // const src = Buffer.from((await res.json()).content, "base64").toString(
+    //     "utf-8"
+    // )
+    const src = fse.readFileSync(`./draw-things-community/Libraries/ModelZoo/Sources/${name}Zoo.swift`, "utf-8")
 
     const specs = extractSpecifications(src)
+    console.log(`Found ${specs.length} official ${name}s`)
     const parsed = await specs.map(s => toJS(s)).filter(s => !!s)
     // const extract = specs.map(s => extractData(s)).filter(s => !!s).map(s => ({ ...s, official: true }))
     // return JSON.stringify(parsed, null, 2)
     // await fse.writeJSON(`./web/models/official.json`, extract, { spaces: 2 })
+    console.log(`Parsed ${parsed.length} official ${name}s`)
     return parsed
 }
 
