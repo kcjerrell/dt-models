@@ -576,7 +576,6 @@
     "textEncoder": "qwen_3_vl_4b_q8p.ckpt",
     "autoencoder": "qwen_image_vae_f16.ckpt",
     "clipEncoder": "krea_2_turbo_i8x.ckpt",
-    "isConsistencyModel": true,
     "paddedTextEncodingLength": 0,
     "hiresFixScale": 24,
     "note": "Krea 2 Turbo is a fast text-to-image flow model using Qwen3-VL text conditioning and the Qwen Image/Wan VAE latent contract. The turbo checkpoint is intended for low-step generation; 1024x1024 at CFG 1 with 4 sampling steps is the validated bring-up target."
