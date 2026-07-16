@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-15T22:44:25.317Z",
+  "lastUpdate": "2026-07-16T22:44:04.252Z",
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -2306,14 +2306,14 @@
       "text_encoder": "analog_v1_clip_vit_l14_f16.ckpt"
     },
     {
-      "name": "Anima Preview 3",
+      "name": "Anima Aesthetic 1.1",
       "version": "cosmos2.5_2b",
       "autoencoder": "qwen_image_vae_f16.ckpt",
       "prefix": "",
       "default_scale": 16,
       "hires_fix_scale": 32,
-      "clip_encoder": "anima_preview_3_f16.ckpt",
-      "file": "anima_preview_3_f16.ckpt",
+      "clip_encoder": "anima_aesthetic_1.1_f16.ckpt",
+      "file": "anima_aesthetic_1.1_f16.ckpt",
       "upcast_attention": false,
       "text_encoder": "qwen_3_0.6b_q8p.ckpt",
       "high_precision_autoencoder": false,
@@ -2328,14 +2328,14 @@
       "hugging_face_link": "circlestone-labs/Anima"
     },
     {
-      "name": "Anima Preview 3 (8-bit S)",
+      "name": "Anima Aesthetic 1.1 (8-bit S)",
       "version": "cosmos2.5_2b",
       "autoencoder": "qwen_image_vae_f16.ckpt",
       "prefix": "",
       "default_scale": 16,
       "hires_fix_scale": 32,
-      "clip_encoder": "anima_preview_3_i8x.ckpt",
-      "file": "anima_preview_3_i8x.ckpt",
+      "clip_encoder": "anima_aesthetic_1.1_i8x.ckpt",
+      "file": "anima_aesthetic_1.1_i8x.ckpt",
       "upcast_attention": false,
       "text_encoder": "qwen_3_0.6b_q8p.ckpt",
       "high_precision_autoencoder": false,
@@ -2350,14 +2350,14 @@
       "hugging_face_link": "circlestone-labs/Anima"
     },
     {
-      "name": "Anima Preview 3 (8-bit)",
+      "name": "Anima Aesthetic 1.1 (8-bit)",
       "version": "cosmos2.5_2b",
       "autoencoder": "qwen_image_vae_f16.ckpt",
       "prefix": "",
       "default_scale": 16,
       "hires_fix_scale": 32,
-      "clip_encoder": "anima_preview_3_q8p.ckpt",
-      "file": "anima_preview_3_q8p.ckpt",
+      "clip_encoder": "anima_aesthetic_1.1_q8p.ckpt",
+      "file": "anima_aesthetic_1.1_q8p.ckpt",
       "upcast_attention": false,
       "text_encoder": "qwen_3_0.6b_q8p.ckpt",
       "high_precision_autoencoder": false,
@@ -2368,6 +2368,138 @@
       },
       "padded_text_encoding_length": 512,
       "note": "[Anima](https://huggingface.co/circlestone-labs/Anima) is a 2B text-to-image model from CircleStone Labs and Comfy Org, focused on anime concepts, characters, styles, illustrations, and other non-photorealistic art. Preview 3 is an intermediate checkpoint built on NVIDIA Cosmos and released under the CircleStone Labs non-commercial license. It is intended for around 1MP generation, with 30-50 sampling steps and CFG 4-5 recommended.",
+      "copyright": "© 2026 CircleStone Labs",
+      "hugging_face_link": "circlestone-labs/Anima"
+    },
+    {
+      "name": "Anima Base 1.0",
+      "version": "cosmos2.5_2b",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "prefix": "",
+      "default_scale": 16,
+      "hires_fix_scale": 32,
+      "clip_encoder": "anima_base_1.0_f16.ckpt",
+      "file": "anima_base_1.0_f16.ckpt",
+      "upcast_attention": false,
+      "text_encoder": "qwen_3_0.6b_q8p.ckpt",
+      "high_precision_autoencoder": false,
+      "objective": {
+        "u": {
+          "condition_scale": 1
+        }
+      },
+      "padded_text_encoding_length": 512,
+      "note": "[Anima](https://huggingface.co/circlestone-labs/Anima) is a 2B text-to-image model from CircleStone Labs and Comfy Org, focused on anime concepts, characters, styles, illustrations, and other non-photorealistic art. Preview 3 is an intermediate checkpoint built on NVIDIA Cosmos and released under the CircleStone Labs non-commercial license. It is intended for around 1MP generation, with 30-50 sampling steps and CFG 4-5 recommended.",
+      "copyright": "© 2026 CircleStone Labs",
+      "hugging_face_link": "circlestone-labs/Anima"
+    },
+    {
+      "name": "Anima Base 1.0 (8-bit S)",
+      "version": "cosmos2.5_2b",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "prefix": "",
+      "default_scale": 16,
+      "hires_fix_scale": 32,
+      "clip_encoder": "anima_base_1.0_i8x.ckpt",
+      "file": "anima_base_1.0_i8x.ckpt",
+      "upcast_attention": false,
+      "text_encoder": "qwen_3_0.6b_q8p.ckpt",
+      "high_precision_autoencoder": false,
+      "objective": {
+        "u": {
+          "condition_scale": 1
+        }
+      },
+      "padded_text_encoding_length": 512,
+      "note": "[Anima](https://huggingface.co/circlestone-labs/Anima) is a 2B text-to-image model from CircleStone Labs and Comfy Org, focused on anime concepts, characters, styles, illustrations, and other non-photorealistic art. Preview 3 is an intermediate checkpoint built on NVIDIA Cosmos and released under the CircleStone Labs non-commercial license. It is intended for around 1MP generation, with 30-50 sampling steps and CFG 4-5 recommended.",
+      "copyright": "© 2026 CircleStone Labs",
+      "hugging_face_link": "circlestone-labs/Anima"
+    },
+    {
+      "name": "Anima Base 1.0 (8-bit)",
+      "version": "cosmos2.5_2b",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "prefix": "",
+      "default_scale": 16,
+      "hires_fix_scale": 32,
+      "clip_encoder": "anima_base_1.0_q8p.ckpt",
+      "file": "anima_base_1.0_q8p.ckpt",
+      "upcast_attention": false,
+      "text_encoder": "qwen_3_0.6b_q8p.ckpt",
+      "high_precision_autoencoder": false,
+      "objective": {
+        "u": {
+          "condition_scale": 1
+        }
+      },
+      "padded_text_encoding_length": 512,
+      "note": "[Anima](https://huggingface.co/circlestone-labs/Anima) is a 2B text-to-image model from CircleStone Labs and Comfy Org, focused on anime concepts, characters, styles, illustrations, and other non-photorealistic art. Preview 3 is an intermediate checkpoint built on NVIDIA Cosmos and released under the CircleStone Labs non-commercial license. It is intended for around 1MP generation, with 30-50 sampling steps and CFG 4-5 recommended.",
+      "copyright": "© 2026 CircleStone Labs",
+      "hugging_face_link": "circlestone-labs/Anima"
+    },
+    {
+      "name": "Anima Turbo 1.0",
+      "version": "cosmos2.5_2b",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "prefix": "",
+      "default_scale": 16,
+      "hires_fix_scale": 32,
+      "clip_encoder": "anima_turbo_1.0_f16.ckpt",
+      "file": "anima_turbo_1.0_f16.ckpt",
+      "upcast_attention": false,
+      "text_encoder": "qwen_3_0.6b_q8p.ckpt",
+      "high_precision_autoencoder": false,
+      "objective": {
+        "u": {
+          "condition_scale": 1
+        }
+      },
+      "padded_text_encoding_length": 512,
+      "note": "[Anima](https://huggingface.co/circlestone-labs/Anima) is a 2B text-to-image model from CircleStone Labs and Comfy Org, focused on anime concepts, characters, styles, illustrations, and other non-photorealistic art. Preview 3 is an intermediate checkpoint built on NVIDIA Cosmos and released under the CircleStone Labs non-commercial license. It is intended for around 1MP generation, with 4-8 sampling steps and CFG 1 recommended.",
+      "copyright": "© 2026 CircleStone Labs",
+      "hugging_face_link": "circlestone-labs/Anima"
+    },
+    {
+      "name": "Anima Turbo 1.0 (8-bit S)",
+      "version": "cosmos2.5_2b",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "prefix": "",
+      "default_scale": 16,
+      "hires_fix_scale": 32,
+      "clip_encoder": "anima_turbo_1.0_i8x.ckpt",
+      "file": "anima_turbo_1.0_i8x.ckpt",
+      "upcast_attention": false,
+      "text_encoder": "qwen_3_0.6b_q8p.ckpt",
+      "high_precision_autoencoder": false,
+      "objective": {
+        "u": {
+          "condition_scale": 1
+        }
+      },
+      "padded_text_encoding_length": 512,
+      "note": "[Anima](https://huggingface.co/circlestone-labs/Anima) is a 2B text-to-image model from CircleStone Labs and Comfy Org, focused on anime concepts, characters, styles, illustrations, and other non-photorealistic art. Preview 3 is an intermediate checkpoint built on NVIDIA Cosmos and released under the CircleStone Labs non-commercial license. It is intended for around 1MP generation, with 4-8 sampling steps and CFG 1 recommended.",
+      "copyright": "© 2026 CircleStone Labs",
+      "hugging_face_link": "circlestone-labs/Anima"
+    },
+    {
+      "name": "Anima Turbo 1.0 (8-bit)",
+      "version": "cosmos2.5_2b",
+      "autoencoder": "qwen_image_vae_f16.ckpt",
+      "prefix": "",
+      "default_scale": 16,
+      "hires_fix_scale": 32,
+      "clip_encoder": "anima_turbo_1.0_q8p.ckpt",
+      "file": "anima_turbo_1.0_q8p.ckpt",
+      "upcast_attention": false,
+      "text_encoder": "qwen_3_0.6b_q8p.ckpt",
+      "high_precision_autoencoder": false,
+      "objective": {
+        "u": {
+          "condition_scale": 1
+        }
+      },
+      "padded_text_encoding_length": 512,
+      "note": "[Anima](https://huggingface.co/circlestone-labs/Anima) is a 2B text-to-image model from CircleStone Labs and Comfy Org, focused on anime concepts, characters, styles, illustrations, and other non-photorealistic art. Preview 3 is an intermediate checkpoint built on NVIDIA Cosmos and released under the CircleStone Labs non-commercial license. It is intended for around 1MP generation, with 4-8 sampling steps and CFG 1 recommended.",
       "copyright": "© 2026 CircleStone Labs",
       "hugging_face_link": "circlestone-labs/Anima"
     },
