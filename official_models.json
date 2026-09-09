@@ -723,6 +723,7 @@
     "defaultScale": 12,
     "textEncoder": "qwen_3_vl_32b_50_i8x.ckpt",
     "autoencoder": "minimax_h3_vae_f16.ckpt",
+    "modifier": "fl2va",
     "framesPerSecond": 24,
     "note": "MiniMax H3 jointly generates video and synchronized stereo audio. Suggested starting settings: 50 DDIM Trailing steps, shift 12, Text Guidance 1, and 1 or 17n+5 frames (124 by default).",
     "copyright": "© MiniMax"
