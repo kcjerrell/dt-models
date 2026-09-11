@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-11T06:41:52.608Z",
+  "lastUpdate": "2026-09-11T18:47:31.452Z",
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -716,19 +716,6 @@
       "note": "[LTX-2.3](https://huggingface.co/Lightricks/LTX-2.3) is a significant update to LTX-2 with improved audio and visual quality and enhanced prompt adherence. It is a state-of-the-art open-source audio-video foundation model developed by Lightricks and can generate synchronized video and audio within a single model. The [distilled] checkpoint is the distilled version of the full model and is optimized for fast inference; for best results, use 8 sampling steps and set Text Guidance to 1.0.",
       "copyright": "© 2026 Lightricks",
       "huggingFaceLink": "Lightricks/LTX-2.3"
-    },
-    {
-      "name": "MiniMax H3 (8-bit S)",
-      "file": "minimax_h3_i8x.ckpt",
-      "prefix": "",
-      "version": "minimaxH3",
-      "defaultScale": 12,
-      "textEncoder": "qwen_3_vl_32b_50_i8x.ckpt",
-      "autoencoder": "minimax_h3_vae_f16.ckpt",
-      "modifier": "fl2va",
-      "framesPerSecond": 24,
-      "note": "MiniMax H3 jointly generates video and synchronized stereo audio. Suggested starting settings: 50 DDIM Trailing steps, shift 12, Text Guidance 1, and 1 or 17n+5 frames (124 by default).",
-      "copyright": "© MiniMax"
     },
     {
       "name": "MiniSD v1.4",
