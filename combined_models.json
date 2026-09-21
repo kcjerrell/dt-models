@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-21T19:46:07.355Z",
+  "lastUpdate": "2026-09-21T22:52:36.073Z",
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -811,6 +811,18 @@
       "isBf16": true,
       "note": "[Qwen Image](https://huggingface.co/Qwen/Qwen-Image) is a state-of-the-art open-source image generation model known for its exceptional text layout and prompt adherence across a wide range of styles, including photorealistic, cartoon, and artistic. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended. The BF16 version is only compatible with macOS 15, iOS 18 and above.",
       "copyright": "© 2025 Alibaba"
+    },
+    {
+      "name": "Qwen Image 2.1",
+      "file": "qwen_image_2.1_f16.ckpt",
+      "prefix": "",
+      "version": "qwenImage2_1",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3_vl_8b_instruct_f16.ckpt",
+      "autoencoder": "qwen_image_2.1_vae_f16.ckpt",
+      "modifier": "kontext",
+      "note": "Qwen Image 2.1 supports text-to-image, reference-image editing, and transparency. Use 40 steps and guidance 1.",
+      "huggingFaceLink": "Qwen/Qwen-Image-2.1"
     },
     {
       "name": "Qwen Image 2512",
