@@ -2991,6 +2991,122 @@
     "note": "[Qwen Image](https://huggingface.co/Qwen/Qwen-Image) is a state-of-the-art open-source image generation model known for its exceptional text layout and prompt adherence across a wide range of styles, including photorealistic, cartoon, and artistic. It is Apache 2.0-licensed and commercially friendly. The model is trained at multiple resolutions using a Flow Matching objective; trailing samplers yield the best results, with 30–50 sampling steps recommended."
   },
   {
+    "name": "Qwen Image 2.1",
+    "version": "qwen_image_2.1",
+    "autoencoder": "qwen_image_2.1_vae_f16.ckpt",
+    "prefix": "",
+    "modifier": "kontext",
+    "default_scale": 16,
+    "file": "qwen_image_2.1_q8p.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "qwen_3_vl_8b_instruct_i8x.ckpt",
+    "high_precision_autoencoder": false,
+    "objective": {
+      "u": {
+        "condition_scale": 1000
+      }
+    },
+    "noise_discretization": {
+      "rf": {
+        "_0": {
+          "sigma_min": 0,
+          "sigma_max": 1,
+          "condition_scale": 1000,
+          "shift_terminal": 0.02
+        }
+      }
+    },
+    "note": "[Qwen Image 2.1](https://huggingface.co/Qwen/Qwen-Image-2.1) supports text-to-image generation, reference-image editing, and native transparency. Provide reference images through the canvas and moodboard, or omit images for text-to-image. For transparent output, explicitly request an RGBA image with an alpha channel and a transparent background. Start with 40 DDIM Trailing steps, Text Guidance 1, and Shift 1 with resolution-dependent shift enabled. Released under the [Qwen Research License Agreement](https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE), for non-commercial research and evaluation; commercial use requires a separate license.",
+    "hugging_face_link": "Qwen/Qwen-Image-2.1"
+  },
+  {
+    "name": "Qwen Image 2.1 (6-bit)",
+    "version": "qwen_image_2.1",
+    "autoencoder": "qwen_image_2.1_vae_f16.ckpt",
+    "prefix": "",
+    "modifier": "kontext",
+    "default_scale": 16,
+    "file": "qwen_image_2.1_q6p.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "qwen_3_vl_8b_instruct_i8x.ckpt",
+    "high_precision_autoencoder": false,
+    "objective": {
+      "u": {
+        "condition_scale": 1000
+      }
+    },
+    "noise_discretization": {
+      "rf": {
+        "_0": {
+          "sigma_min": 0,
+          "sigma_max": 1,
+          "condition_scale": 1000,
+          "shift_terminal": 0.02
+        }
+      }
+    },
+    "note": "[Qwen Image 2.1](https://huggingface.co/Qwen/Qwen-Image-2.1) supports text-to-image generation, reference-image editing, and native transparency. Provide reference images through the canvas and moodboard, or omit images for text-to-image. For transparent output, explicitly request an RGBA image with an alpha channel and a transparent background. Start with 40 DDIM Trailing steps, Text Guidance 1, and Shift 1 with resolution-dependent shift enabled. Released under the [Qwen Research License Agreement](https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE), for non-commercial research and evaluation; commercial use requires a separate license.",
+    "hugging_face_link": "Qwen/Qwen-Image-2.1"
+  },
+  {
+    "name": "Qwen Image 2.1 (8-bit S)",
+    "version": "qwen_image_2.1",
+    "autoencoder": "qwen_image_2.1_vae_f16.ckpt",
+    "prefix": "",
+    "modifier": "kontext",
+    "default_scale": 16,
+    "file": "qwen_image_2.1_i8x.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "qwen_3_vl_8b_instruct_i8x.ckpt",
+    "high_precision_autoencoder": false,
+    "objective": {
+      "u": {
+        "condition_scale": 1000
+      }
+    },
+    "noise_discretization": {
+      "rf": {
+        "_0": {
+          "sigma_min": 0,
+          "sigma_max": 1,
+          "condition_scale": 1000,
+          "shift_terminal": 0.02
+        }
+      }
+    },
+    "note": "[Qwen Image 2.1](https://huggingface.co/Qwen/Qwen-Image-2.1) supports text-to-image generation, reference-image editing, and native transparency. Provide reference images through the canvas and moodboard, or omit images for text-to-image. For transparent output, explicitly request an RGBA image with an alpha channel and a transparent background. Start with 40 DDIM Trailing steps, Text Guidance 1, and Shift 1 with resolution-dependent shift enabled. Released under the [Qwen Research License Agreement](https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE), for non-commercial research and evaluation; commercial use requires a separate license.",
+    "hugging_face_link": "Qwen/Qwen-Image-2.1"
+  },
+  {
+    "name": "Qwen Image 2.1 (Exact)",
+    "version": "qwen_image_2.1",
+    "autoencoder": "qwen_image_2.1_vae_f16.ckpt",
+    "prefix": "",
+    "modifier": "kontext",
+    "default_scale": 16,
+    "file": "qwen_image_2.1_f16.ckpt",
+    "upcast_attention": false,
+    "text_encoder": "qwen_3_vl_8b_instruct_f16.ckpt",
+    "high_precision_autoencoder": false,
+    "objective": {
+      "u": {
+        "condition_scale": 1000
+      }
+    },
+    "noise_discretization": {
+      "rf": {
+        "_0": {
+          "sigma_min": 0,
+          "sigma_max": 1,
+          "condition_scale": 1000,
+          "shift_terminal": 0.02
+        }
+      }
+    },
+    "note": "[Qwen Image 2.1](https://huggingface.co/Qwen/Qwen-Image-2.1) supports text-to-image generation, reference-image editing, and native transparency. Provide reference images through the canvas and moodboard, or omit images for text-to-image. For transparent output, explicitly request an RGBA image with an alpha channel and a transparent background. Start with 40 DDIM Trailing steps, Text Guidance 1, and Shift 1 with resolution-dependent shift enabled. Released under the [Qwen Research License Agreement](https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE), for non-commercial research and evaluation; commercial use requires a separate license.",
+    "hugging_face_link": "Qwen/Qwen-Image-2.1"
+  },
+  {
     "name": "Qwen Image 2512 (BF16, Exact)",
     "version": "qwen_image",
     "autoencoder": "qwen_image_vae_f16.ckpt",

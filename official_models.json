@@ -811,18 +811,6 @@
     "copyright": "© 2025 Alibaba"
   },
   {
-    "name": "Qwen Image 2.1",
-    "file": "qwen_image_2.1_f16.ckpt",
-    "prefix": "",
-    "version": "qwenImage2_1",
-    "defaultScale": 16,
-    "textEncoder": "qwen_3_vl_8b_instruct_f16.ckpt",
-    "autoencoder": "qwen_image_2.1_vae_f16.ckpt",
-    "modifier": "kontext",
-    "note": "Qwen Image 2.1 supports text-to-image, reference-image editing, and transparency. Use 40 steps and guidance 1.",
-    "huggingFaceLink": "Qwen/Qwen-Image-2.1"
-  },
-  {
     "name": "Qwen Image 2512",
     "file": "qwen_image_2512_q8p.ckpt",
     "prefix": "",
