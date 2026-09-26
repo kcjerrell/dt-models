@@ -2534,13 +2534,13 @@
     "hugging_face_link": "MiniMaxAI/MiniMax-H3"
   },
   {
-    "name": "MiniMax H3 (6-bit S)",
+    "name": "MiniMax H3 (4-bit S)",
     "version": "minimax_h3",
     "autoencoder": "minimax_h3_vae_f16.ckpt",
     "prefix": "",
     "modifier": "fl2va",
     "default_scale": 12,
-    "file": "minimax_h3_fl2va_i6x.ckpt",
+    "file": "minimax_h3_fl2va_i4x.ckpt",
     "upcast_attention": false,
     "text_encoder": "qwen_3_vl_32b_50_i8x.ckpt",
     "high_precision_autoencoder": false,
@@ -2618,13 +2618,13 @@
     "hugging_face_link": "MiniMaxAI/MiniMax-H3"
   },
   {
-    "name": "MiniMax H3 [ref2va] (6-bit S)",
+    "name": "MiniMax H3 [ref2va] (4-bit S)",
     "version": "minimax_h3",
     "autoencoder": "minimax_h3_vae_f16.ckpt",
     "prefix": "",
     "modifier": "ref2va",
     "default_scale": 12,
-    "file": "minimax_h3_ref2va_i6x.ckpt",
+    "file": "minimax_h3_ref2va_i4x.ckpt",
     "upcast_attention": false,
     "text_encoder": "qwen_3_vl_32b_50_i8x.ckpt",
     "high_precision_autoencoder": false,
