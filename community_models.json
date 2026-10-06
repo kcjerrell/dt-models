@@ -3001,7 +3001,7 @@
     "file": "qwen_image_2.1_q8p.ckpt",
     "upcast_attention": false,
     "text_encoder": "qwen_3_vl_8b_instruct_i8x.ckpt",
-    "high_precision_autoencoder": false,
+    "high_precision_autoencoder": true,
     "objective": {
       "u": {
         "condition_scale": 1000
@@ -3031,7 +3031,7 @@
     "file": "qwen_image_2.1_i4x.ckpt",
     "upcast_attention": false,
     "text_encoder": "qwen_3_vl_8b_instruct_i8x.ckpt",
-    "high_precision_autoencoder": false,
+    "high_precision_autoencoder": true,
     "objective": {
       "u": {
         "condition_scale": 1000
@@ -3061,7 +3061,7 @@
     "file": "qwen_image_2.1_q6p.ckpt",
     "upcast_attention": false,
     "text_encoder": "qwen_3_vl_8b_instruct_i8x.ckpt",
-    "high_precision_autoencoder": false,
+    "high_precision_autoencoder": true,
     "objective": {
       "u": {
         "condition_scale": 1000
@@ -3091,7 +3091,7 @@
     "file": "qwen_image_2.1_i8x.ckpt",
     "upcast_attention": false,
     "text_encoder": "qwen_3_vl_8b_instruct_i8x.ckpt",
-    "high_precision_autoencoder": false,
+    "high_precision_autoencoder": true,
     "objective": {
       "u": {
         "condition_scale": 1000
@@ -3121,7 +3121,7 @@
     "file": "qwen_image_2.1_f16.ckpt",
     "upcast_attention": false,
     "text_encoder": "qwen_3_vl_8b_instruct_f16.ckpt",
-    "high_precision_autoencoder": false,
+    "high_precision_autoencoder": true,
     "objective": {
       "u": {
         "condition_scale": 1000
