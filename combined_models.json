@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-10-08T20:16:41.961Z",
+  "lastUpdate": "2026-10-09T19:05:56.201Z",
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -5441,6 +5441,151 @@
       },
       "note": "[Qwen Image 2.1](https://huggingface.co/Qwen/Qwen-Image-2.1) supports text-to-image generation, reference-image editing, and native transparency. Provide reference images through the canvas and moodboard, or omit images for text-to-image. For transparent output, explicitly request an RGBA image with an alpha channel and a transparent background. Start with 40 DDIM Trailing steps, Text Guidance 1, and Shift 1 with resolution-dependent shift enabled. Released under the [Qwen Research License Agreement](https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE), for non-commercial research and evaluation; commercial use requires a separate license.",
       "hugging_face_link": "Qwen/Qwen-Image-2.1"
+    },
+    {
+      "name": "Qwen Image 2.1 Turbo",
+      "version": "qwen_image_2.1",
+      "autoencoder": "qwen_image_2.1_vae_f16.ckpt",
+      "prefix": "",
+      "modifier": "kontext",
+      "default_scale": 24,
+      "hires_fix_scale": 40,
+      "file": "qwen_image_2.1_turbo_q8p.ckpt",
+      "upcast_attention": false,
+      "text_encoder": "qwen_3_vl_8b_instruct_i8x.ckpt",
+      "high_precision_autoencoder": true,
+      "objective": {
+        "u": {
+          "condition_scale": 1000
+        }
+      },
+      "noise_discretization": {
+        "rf": {
+          "_0": {
+            "sigma_min": 0,
+            "sigma_max": 1,
+            "condition_scale": 1000
+          }
+        }
+      },
+      "note": "[Qwen Image 2.1 Turbo](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo) is an accelerated version of Qwen Image 2.1 for text-to-image generation and reference-image editing in 8 sampling steps, with native transparency support. Provide reference images through the canvas and moodboard, or omit images for text-to-image. For transparent output, explicitly request an RGBA image with an alpha channel and a transparent background. Start with 8 DDIM Trailing steps, Text Guidance 1, and Shift 6.5 with resolution-dependent shift disabled. Released under the [Qwen Research License Agreement](https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE) for non-commercial research and evaluation; commercial use requires a separate license.",
+      "hugging_face_link": "Qwen/Qwen-Image-2.1-Turbo"
+    },
+    {
+      "name": "Qwen Image 2.1 Turbo (4-bit S)",
+      "version": "qwen_image_2.1",
+      "autoencoder": "qwen_image_2.1_vae_f16.ckpt",
+      "prefix": "",
+      "modifier": "kontext",
+      "default_scale": 24,
+      "hires_fix_scale": 40,
+      "file": "qwen_image_2.1_turbo_i4x.ckpt",
+      "upcast_attention": false,
+      "text_encoder": "qwen_3_vl_8b_instruct_i8x.ckpt",
+      "high_precision_autoencoder": true,
+      "objective": {
+        "u": {
+          "condition_scale": 1000
+        }
+      },
+      "noise_discretization": {
+        "rf": {
+          "_0": {
+            "sigma_min": 0,
+            "sigma_max": 1,
+            "condition_scale": 1000
+          }
+        }
+      },
+      "note": "[Qwen Image 2.1 Turbo](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo) is an accelerated version of Qwen Image 2.1 for text-to-image generation and reference-image editing in 8 sampling steps, with native transparency support. Provide reference images through the canvas and moodboard, or omit images for text-to-image. For transparent output, explicitly request an RGBA image with an alpha channel and a transparent background. Start with 8 DDIM Trailing steps, Text Guidance 1, and Shift 6.5 with resolution-dependent shift disabled. Released under the [Qwen Research License Agreement](https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE) for non-commercial research and evaluation; commercial use requires a separate license.",
+      "hugging_face_link": "Qwen/Qwen-Image-2.1-Turbo"
+    },
+    {
+      "name": "Qwen Image 2.1 Turbo (6-bit)",
+      "version": "qwen_image_2.1",
+      "autoencoder": "qwen_image_2.1_vae_f16.ckpt",
+      "prefix": "",
+      "modifier": "kontext",
+      "default_scale": 24,
+      "hires_fix_scale": 40,
+      "file": "qwen_image_2.1_turbo_q6p.ckpt",
+      "upcast_attention": false,
+      "text_encoder": "qwen_3_vl_8b_instruct_i8x.ckpt",
+      "high_precision_autoencoder": true,
+      "objective": {
+        "u": {
+          "condition_scale": 1000
+        }
+      },
+      "noise_discretization": {
+        "rf": {
+          "_0": {
+            "sigma_min": 0,
+            "sigma_max": 1,
+            "condition_scale": 1000
+          }
+        }
+      },
+      "note": "[Qwen Image 2.1 Turbo](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo) is an accelerated version of Qwen Image 2.1 for text-to-image generation and reference-image editing in 8 sampling steps, with native transparency support. Provide reference images through the canvas and moodboard, or omit images for text-to-image. For transparent output, explicitly request an RGBA image with an alpha channel and a transparent background. Start with 8 DDIM Trailing steps, Text Guidance 1, and Shift 6.5 with resolution-dependent shift disabled. Released under the [Qwen Research License Agreement](https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE) for non-commercial research and evaluation; commercial use requires a separate license.",
+      "hugging_face_link": "Qwen/Qwen-Image-2.1-Turbo"
+    },
+    {
+      "name": "Qwen Image 2.1 Turbo (8-bit S)",
+      "version": "qwen_image_2.1",
+      "autoencoder": "qwen_image_2.1_vae_f16.ckpt",
+      "prefix": "",
+      "modifier": "kontext",
+      "default_scale": 24,
+      "hires_fix_scale": 40,
+      "file": "qwen_image_2.1_turbo_i8x.ckpt",
+      "upcast_attention": false,
+      "text_encoder": "qwen_3_vl_8b_instruct_i8x.ckpt",
+      "high_precision_autoencoder": true,
+      "objective": {
+        "u": {
+          "condition_scale": 1000
+        }
+      },
+      "noise_discretization": {
+        "rf": {
+          "_0": {
+            "sigma_min": 0,
+            "sigma_max": 1,
+            "condition_scale": 1000
+          }
+        }
+      },
+      "note": "[Qwen Image 2.1 Turbo](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo) is an accelerated version of Qwen Image 2.1 for text-to-image generation and reference-image editing in 8 sampling steps, with native transparency support. Provide reference images through the canvas and moodboard, or omit images for text-to-image. For transparent output, explicitly request an RGBA image with an alpha channel and a transparent background. Start with 8 DDIM Trailing steps, Text Guidance 1, and Shift 6.5 with resolution-dependent shift disabled. Released under the [Qwen Research License Agreement](https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE) for non-commercial research and evaluation; commercial use requires a separate license.",
+      "hugging_face_link": "Qwen/Qwen-Image-2.1-Turbo"
+    },
+    {
+      "name": "Qwen Image 2.1 Turbo (Exact)",
+      "version": "qwen_image_2.1",
+      "autoencoder": "qwen_image_2.1_vae_f16.ckpt",
+      "prefix": "",
+      "modifier": "kontext",
+      "default_scale": 16,
+      "hires_fix_scale": 40,
+      "file": "qwen_image_2.1_turbo_f16.ckpt",
+      "upcast_attention": false,
+      "text_encoder": "qwen_3_vl_8b_instruct_f16.ckpt",
+      "high_precision_autoencoder": true,
+      "objective": {
+        "u": {
+          "condition_scale": 1000
+        }
+      },
+      "noise_discretization": {
+        "rf": {
+          "_0": {
+            "sigma_min": 0,
+            "sigma_max": 1,
+            "condition_scale": 1000
+          }
+        }
+      },
+      "note": "[Qwen Image 2.1 Turbo](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo) is an accelerated version of Qwen Image 2.1 for text-to-image generation and reference-image editing in 8 sampling steps, with native transparency support. Provide reference images through the canvas and moodboard, or omit images for text-to-image. For transparent output, explicitly request an RGBA image with an alpha channel and a transparent background. Start with 8 DDIM Trailing steps, Text Guidance 1, and Shift 6.5 with resolution-dependent shift disabled. Released under the [Qwen Research License Agreement](https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE) for non-commercial research and evaluation; commercial use requires a separate license.",
+      "hugging_face_link": "Qwen/Qwen-Image-2.1-Turbo"
     },
     {
       "name": "Qwen Image 2512 (BF16, Exact)",
