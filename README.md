@@ -13,3 +13,6 @@ For convenience, these scripts will run periodically and publish the latest data
 - https://kcjerrell.github.io/dt-models/community_loras.json
 - https://kcjerrell.github.io/dt-models/community_embeddings.json
 - https://kcjerrell.github.io/dt-models/uncurated_models.json
+
+This file has all of the above combined:
+- https://kcjerrell.github.io/dt-models/combined_models.json
