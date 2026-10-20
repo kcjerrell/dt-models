@@ -231,45 +231,6 @@
     "huggingFaceLink": "black-forest-labs/FLUX.2-klein-base-4B"
   },
   {
-    "name": "FLUX.3 [klein] 5.6B",
-    "file": "flux_3_klein_q8p.ckpt",
-    "prefix": "",
-    "version": "flux3_5b",
-    "defaultScale": 16,
-    "textEncoder": "qwen_3_vl_4b_instruct_i8x.ckpt",
-    "autoencoder": "flux_2_vae_f16.ckpt",
-    "modifier": "kontext",
-    "hiresFixScale": 24,
-    "note": "FLUX.3 [klein] 5.6B is a rectified flow transformer capable of generating and editing images based on text instructions. It is a flow map model; 16 sampling steps with shift 6.93 are recommended.",
-    "copyright": "© 2026 Black Forest Labs"
-  },
-  {
-    "name": "FLUX.3 [klein] 5.6B (8-bit S)",
-    "file": "flux_3_klein_i8x.ckpt",
-    "prefix": "",
-    "version": "flux3_5b",
-    "defaultScale": 16,
-    "textEncoder": "qwen_3_vl_4b_instruct_i8x.ckpt",
-    "autoencoder": "flux_2_vae_f16.ckpt",
-    "modifier": "kontext",
-    "hiresFixScale": 24,
-    "note": "FLUX.3 [klein] 5.6B is a rectified flow transformer capable of generating and editing images based on text instructions. It is a flow map model; 16 sampling steps with shift 6.93 are recommended.",
-    "copyright": "© 2026 Black Forest Labs"
-  },
-  {
-    "name": "FLUX.3 [klein] 5.6B Base (8-bit S)",
-    "file": "flux_3_klein_base_i8x.ckpt",
-    "prefix": "",
-    "version": "flux3_5b",
-    "defaultScale": 16,
-    "textEncoder": "qwen_3_vl_4b_instruct_i8x.ckpt",
-    "autoencoder": "flux_2_vae_f16.ckpt",
-    "modifier": "kontext",
-    "hiresFixScale": 24,
-    "note": "FLUX.3 [klein] 5.6B Base is the undistilled rectified flow transformer capable of generating and editing images based on text instructions. Unlike FLUX.3 [klein] 5B, it requires classifier-free guidance.",
-    "copyright": "© 2026 Black Forest Labs"
-  },
-  {
     "name": "Fooocus Inpaint SDXL v2.6",
     "file": "fooocus_inpaint_sd_xl_v2.6_f16.ckpt",
     "prefix": "",
