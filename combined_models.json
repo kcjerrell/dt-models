@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-10-20T18:08:54.777Z",
+  "lastUpdate": "2026-10-20T21:57:28.759Z",
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -726,8 +726,73 @@
       "deprecated": true
     },
     {
+      "name": "MOSS Image Base",
+      "file": "moss_image_base_q8p.ckpt",
+      "prefix": "",
+      "version": "mossImage",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3.5_9b_i5x.ckpt",
+      "autoencoder": "flux_2_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "note": "[MOSS Image Base](https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base) is the base text-to-image model of the MOSS Image family from OpenMOSS. It supports natural-language prompts, tag sequences and JSON layouts for controlling text placement and object arrangement. 50 sampling steps with Text Guidance 3 and Shift 5 are recommended. The model is Apache 2.0-licensed.",
+      "copyright": "© 2026 OpenMOSS",
+      "huggingFaceLink": "OpenMOSS-Team/MOSS-Image-Base"
+    },
+    {
+      "name": "MOSS Image Base (4-bit S)",
+      "file": "moss_image_base_i4x.ckpt",
+      "prefix": "",
+      "version": "mossImage",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3.5_9b_i5x.ckpt",
+      "autoencoder": "flux_2_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "note": "[MOSS Image Base](https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base) is the base text-to-image model of the MOSS Image family from OpenMOSS. It supports natural-language prompts, tag sequences and JSON layouts for controlling text placement and object arrangement. 50 sampling steps with Text Guidance 3 and Shift 5 are recommended. The model is Apache 2.0-licensed.",
+      "copyright": "© 2026 OpenMOSS",
+      "huggingFaceLink": "OpenMOSS-Team/MOSS-Image-Base"
+    },
+    {
+      "name": "MOSS Image Base (8-bit S)",
+      "file": "moss_image_base_i8x.ckpt",
+      "prefix": "",
+      "version": "mossImage",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3.5_9b_i5x.ckpt",
+      "autoencoder": "flux_2_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "note": "[MOSS Image Base](https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base) is the base text-to-image model of the MOSS Image family from OpenMOSS. It supports natural-language prompts, tag sequences and JSON layouts for controlling text placement and object arrangement. 50 sampling steps with Text Guidance 3 and Shift 5 are recommended. The model is Apache 2.0-licensed.",
+      "copyright": "© 2026 OpenMOSS",
+      "huggingFaceLink": "OpenMOSS-Team/MOSS-Image-Base"
+    },
+    {
       "name": "MOSS Image SFT",
-      "file": "moss_image_sft_f16.ckpt",
+      "file": "moss_image_sft_q8p.ckpt",
+      "prefix": "",
+      "version": "mossImage",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3.5_9b_i5x.ckpt",
+      "autoencoder": "flux_2_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "note": "[MOSS Image SFT](https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT) is a supervised fine-tuned text-to-image model from OpenMOSS. It supports natural-language prompts, tag sequences and JSON layouts for controlling text placement and object arrangement. 50 sampling steps with Text Guidance 3 and Shift 5 are recommended. The model is Apache 2.0-licensed.",
+      "copyright": "© 2026 OpenMOSS",
+      "huggingFaceLink": "OpenMOSS-Team/MOSS-Image-SFT"
+    },
+    {
+      "name": "MOSS Image SFT (4-bit S)",
+      "file": "moss_image_sft_i4x.ckpt",
+      "prefix": "",
+      "version": "mossImage",
+      "defaultScale": 16,
+      "textEncoder": "qwen_3.5_9b_i5x.ckpt",
+      "autoencoder": "flux_2_vae_f16.ckpt",
+      "hiresFixScale": 24,
+      "note": "[MOSS Image SFT](https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT) is a supervised fine-tuned text-to-image model from OpenMOSS. It supports natural-language prompts, tag sequences and JSON layouts for controlling text placement and object arrangement. 50 sampling steps with Text Guidance 3 and Shift 5 are recommended. The model is Apache 2.0-licensed.",
+      "copyright": "© 2026 OpenMOSS",
+      "huggingFaceLink": "OpenMOSS-Team/MOSS-Image-SFT"
+    },
+    {
+      "name": "MOSS Image SFT (8-bit S)",
+      "file": "moss_image_sft_i8x.ckpt",
       "prefix": "",
       "version": "mossImage",
       "defaultScale": 16,
