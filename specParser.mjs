@@ -191,6 +191,8 @@ export function versionMap(version) {
             return "ltx2.3"
         case "ernieImage":
             return "ernie_image"
+        case "mossImage":
+            return "moss_image"
         default:
             return version
     }
