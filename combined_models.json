@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-21T02:52:51.992Z",
+  "lastUpdate": "2026-11-21T10:20:08.304Z",
   "officialModels": [
     {
       "name": "AuraFlow v0.1",
@@ -716,20 +716,6 @@
       "note": "[LTX-2.3](https://huggingface.co/Lightricks/LTX-2.3) is a significant update to LTX-2 with improved audio and visual quality and enhanced prompt adherence. It is a state-of-the-art open-source audio-video foundation model developed by Lightricks and can generate synchronized video and audio within a single model. The [distilled] checkpoint is the distilled version of the full model and is optimized for fast inference; for best results, use 8 sampling steps and set Text Guidance to 1.0.",
       "copyright": "© 2026 Lightricks",
       "huggingFaceLink": "Lightricks/LTX-2.3"
-    },
-    {
-      "name": "MiniMax H3 Image (4-bit S)",
-      "file": "minimax_h3_image_i4x.ckpt",
-      "prefix": "",
-      "version": "minimaxH3Image",
-      "defaultScale": 64,
-      "textEncoder": "qwen_3_vl_32b_50_i8x.ckpt",
-      "autoencoder": "minimax_h3_image_vae_f16.ckpt",
-      "modifier": "kontext",
-      "hiresFixScale": 96,
-      "note": "[MiniMax H3 Image](https://huggingface.co/MiniMaxAI/MiniMax-H3-Image) generates and edits images. The canvas and moodboard images are its reference images, which the prompt refers to as <Picture 1>, <Picture 2> and so on. The model is distilled to 6 steps without guidance: use 6 steps, Text Guidance 1, Shift 3 and DDIM Trailing. It works best at 4 to 16 megapixels with a detailed English prompt.",
-      "copyright": "© 2026 MiniMax",
-      "huggingFaceLink": "MiniMaxAI/MiniMax-H3-Image"
     },
     {
       "name": "MiniSD v1.4",
